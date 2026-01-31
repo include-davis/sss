@@ -1,0 +1,14 @@
+//@use "@/app/(pages)/_globals/mixins.scss";
+//@include mixins.name {}; to use
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

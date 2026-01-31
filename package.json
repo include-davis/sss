@@ -1,0 +1,24 @@
+{
+  "name": "nextjstest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write '**/*.{js,jsx,json,scss}'"
+  },
+  "dependencies": {
+    "next": "^16.1.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "sass": "^1.89.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "15.4.4",
+    "prettier": "^3.8.1"
+  }
+}
