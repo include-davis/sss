@@ -1,3 +1,4 @@
+import Navbar from "./_Navbar/Nav.jsx";
 import "./_globals/globals.scss";
 import { Oxanium } from "next/font/google";
 
@@ -12,7 +13,10 @@ const oxanium = Oxanium();
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={oxanium.className}>{children}</body>
+      <body className={oxanium.className}>
+        <Navbar/> 
+        {children}
+      </body>
     </html>
   );
 }
