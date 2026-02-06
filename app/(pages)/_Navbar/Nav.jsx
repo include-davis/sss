@@ -17,7 +17,7 @@ export default function Navbar() {
           priority
         />
       </Link>
-      <ul className={styles.links}>
+      <ul className={styles.pages}>
         <li><Link href="/">Home</Link></li>
         <li><Link href="/missions">Missions</Link></li>
         <li><Link href="/teams">Teams</Link></li>

@@ -1,6 +1,6 @@
 import Navbar from "./_Navbar/Nav.jsx";
 import "./_globals/globals.scss";
-import { Oxanium } from "next/font/google";
+import { Oxanium, Space_Grotesk } from "next/font/google";
 
 export const metadata = {
   title: "Space and Satellite Systems",
@@ -9,6 +9,10 @@ export const metadata = {
 };
 
 const oxanium = Oxanium();
+const space_grotesk = Space_Grotesk({
+  weight: ["500"]
+});
+
 
 export default function RootLayout({ children }) {
   return (
