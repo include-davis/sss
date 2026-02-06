@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./Nav.module.scss";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({logoSrc, logoAl, pages}) {
   return (
     <nav className={styles.nav}>
       <Link href="/" className={styles.logo}>
