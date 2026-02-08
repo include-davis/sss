@@ -1,7 +1,7 @@
-"use cilent"; 
-import { usestate } from  "react"
-import Image from "next/image"
-import styles from "./page.module.scss"
+"use cilent";
+import { usestate } from "react";
+import Image from "next/image";
+import styles from "./page.module.scss";
 // import styles from "./mixins.scss"
 
 // import .scss file (use styles)
