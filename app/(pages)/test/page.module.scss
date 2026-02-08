@@ -1,0 +1,59 @@
+.pageBody
+{
+  background: var(--Blue-Gradiant);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  // min-height: 100vh; // temp
+}
+
+.content
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem 6rem;
+}
+
+.softwareHeader
+{
+  color: #FFF;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  size: 3rem;
+  position: fixed;  
+}
+.softwareDescription
+{
+  height: 9.75rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Space Grotesk";
+  color: var(--Off-White, #F7F7F7);
+  width: 39.375rem;
+  max-width: 45rem;
+}
+.SVGContainer
+{
+  display: flex;
+  width: 32.125rem;
+  padding: 2.67713rem 2.67713rem 3.32563rem 2.67706rem;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  margin-left: auto;
+  position: sticky;
+}
+
+.SVGContainer svg{
+  position: sticky;
+  top: 4rem;
+} 
+:root{
+  --Blue-Gradiant: linear-gradient(180deg, #000138 0%, #172B54 100%);
+  --Off-White:#F7F7F7;
+}
