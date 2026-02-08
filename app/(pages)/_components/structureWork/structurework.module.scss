@@ -1,0 +1,90 @@
+.structureWork {
+  background-color: var(--white);
+  padding: 42.4px 90px; 
+}
+
+.container {
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 64px;
+}
+
+.header {
+  padding: 12.3px 77.5px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+
+  h1 {
+    font-family: Oxanium;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.text {
+    align-items: stretch;
+    color: var(--black);
+    /* Body */
+    font-family: "Space Grotesk";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carouselWrapper {
+  width: 100%;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.projectGrid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1.25rem;
+  align-self: stretch;
+  position: relative;
+}
+
+.projectCard {
+  border-radius: 0.9375rem 0.9375rem 0 0;
+}
+
+.image {
+  img {
+    display: block;
+    width: 28.125rem;
+    height: 21rem;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+  }
+}
+
+.cardLabel {
+    height: 3.875rem;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    align-self: stretch;
+
+    border-radius: 0 0 0.9375rem 0.9375rem;
+    background: var(--navy);
+
+    h3 {
+    color: var(--white);
+    /* Subtext */
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+}
+
