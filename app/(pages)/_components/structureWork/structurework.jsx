@@ -6,7 +6,10 @@ export default function StructureWork() {
   const projects = [
     { title: 'Partial Assembly', src: '/partial-assembly.png', width: 450, height: 336, alt: 'Partial Assembly' },
     { title: 'Thermal Analysis', src: '/thermal-analysis.png', width: 450, height: 336, alt: 'Thermal Analysis' },
-    { title: 'Battery Holder', src: '/battery.png', width: 450, height: 336, alt: 'Battery Holder' }
+    { title: 'Battery Holder', src: '/battery.png', width: 450, height: 336, alt: 'Battery Holder' },
+    { title: 'REALOP I Drawing', src: '/REALOP.png', width: 450, height: 336, alt: 'REALOP I Drawing'},
+    { title: 'Mech Analysis', src: '/MechAnalysis.png', width: 450, height: 336, alt: 'Mech Analysis'},
+    { title: 'Assembly', src: '/assembly.png', width: 450, height: 336, alt: 'Assembly'}
   ];
 
   return (
@@ -22,6 +25,7 @@ export default function StructureWork() {
           </p>
         </div>
         
+        <div className={styles.carsouelWrapper}>
           <div className={styles.projectGrid}>
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
@@ -39,7 +43,25 @@ export default function StructureWork() {
                 </div>
               </div>
             ))}
+
+            {projects.map((project, index) => (
+              <div key={index} className={styles.projectCard}>
+                <div className={styles.image}>
+                  <Image 
+                    src={project.src} 
+                    width={project.width} 
+                    height={project.height}
+                    alt={project.alt}
+                    className={styles.img}
+                  />
+                </div>
+                <div className={styles.cardLabel}>
+                  <h3>{project.title}</h3>
+                </div>
+              </div>
+            ))}
           </div>
+        </div>
       </div>
     </div>
   );

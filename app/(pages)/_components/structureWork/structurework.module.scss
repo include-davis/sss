@@ -5,7 +5,6 @@
 
 .container {
   display: flex;
-  width: 1440px;
   flex-direction: column;
   align-items: baseline;
   gap: 64px;
@@ -38,11 +37,16 @@
     line-height: normal;
 }
 
+@keyframes spin {
+  from { translate: 0; }
+  to { translate: -50%; }
+}
+
 .carouselWrapper {
   width: 100%;
   overflow: hidden;
-  align-self: stretch;
 }
+
 
 .projectGrid {
   display: flex;
@@ -51,6 +55,11 @@
   gap: 1.25rem;
   align-self: stretch;
   position: relative;
+  animation: spin 30s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 .projectCard {
@@ -67,6 +76,7 @@
 }
 
 .cardLabel {
+    display: flex;
     height: 3.875rem;
     padding: 2rem;
     flex-direction: column;
