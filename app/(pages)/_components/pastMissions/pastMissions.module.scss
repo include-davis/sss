@@ -1,0 +1,128 @@
+.PastMissions {
+  background-color: var(--white);
+  padding: 42.4px 90px; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  padding: 0 6.25rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+
+  h1 {
+    font-family: Oxanium;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+@keyframes spin {
+  from { translate: 0; }
+  to { translate: -50%; }
+}
+
+.carouselWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.projectGrid {
+  // for the project layout 
+  display: flex;
+  padding: 0.625rem 6.25rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.625rem;
+  animation: spin 30s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.projectCard {
+  // for each project
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  display: flex;
+  width: 28.125rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  img {
+    display: block;
+    height: 15.625rem;
+    width: 28.125rem;
+    align-self: stretch;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    border: 1px solid var(--navy);
+  }
+}
+
+.cardLabel {
+  // project card below image 
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: var(--navy);
+  height: 20.375rem;
+
+  h2{
+    // project title 
+    color: var(--white);
+    font-family: Oxanium;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  h3 {
+    // sub text
+    color: var(--light-gray);
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-weight: 400;
+}
+  h4{
+    // body text 
+    color: var(--light-gray);
+    font-family: "Space Grotesk";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+  button{
+    // button
+    display: flex;
+    width: 14.0625rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+    border-radius: 0.3125rem;
+    border: 0.5px solid var(--white);
+    background: var(--white);
+
+    // text
+    color: var(--dark-gray);
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
