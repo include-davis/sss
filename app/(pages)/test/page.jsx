@@ -31,7 +31,7 @@ export default function Test() {
             </div>
             <p>We have an official launch contract with NASA to put REALOP into low Earth orbit.</p>
           </div>
-          <a href="https://www.roblox.com/">
+          <a className={styles.a} href="https://www.roblox.com/">
             <button className={styles.button}>Learn More</button>
           </a>
         </div>

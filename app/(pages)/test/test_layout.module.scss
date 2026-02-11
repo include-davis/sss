@@ -58,7 +58,9 @@
   border-radius: 0.4375rem;
 }
 
-
+.a{
+  text-decoration: none;
+}
 
 .button{
   text-decoration: none;
@@ -85,7 +87,7 @@
   transition: color 0.4s linear;
 }
 .button:hover{
-  color:Blue Gradient;
+  background-color:#172B54;
 }
 
 .norm_text{
