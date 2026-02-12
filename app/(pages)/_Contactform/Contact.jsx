@@ -8,6 +8,7 @@ export default function Contact() {
         firstName: "",
         lastName:"",
         email: "",
+        subject:"",
         message: "",
     });
 
@@ -23,13 +24,14 @@ export default function Contact() {
       const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log("Form Data:", formData); //later replac this w/ API call to send form data to backend
+        console.log("Form Data:", formData); //later replace this w/ API call to send form data to backend
 
         // Reset form 
         setFormData({
             firstName: "",
             lastName: "",
             email: "",
+            subject: "",
             message: "", 
         });
       };
@@ -38,7 +40,7 @@ export default function Contact() {
         <section className={styles.container}>
             <h2 className={styles.title}>Let's get in touch!</h2>
             
-            <form onSubmit={handleSubmit} classBane={styles.form}>
+            <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.row}>
                     <input 
                         type="text"
@@ -80,13 +82,14 @@ export default function Contact() {
                         type="text"
                         name="message"
                         placeholder="Enter Your Message Here"
-                        value={formData.subject}
+                        value={formData.message}
                         onChange={handleChange}
                         required 
                     />
 
                     <button type ="submit" className={styles.submit}>Send Message</button> 
-            </form>
+                    </div>
+                 </form>
         </section>
      );
     }

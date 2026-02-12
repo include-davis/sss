@@ -1,3 +1,4 @@
+import Contactform from "./_Contactform/Contact.jsx";
 import "./_globals/globals.scss";
 import { Oxanium } from "next/font/google";
 
