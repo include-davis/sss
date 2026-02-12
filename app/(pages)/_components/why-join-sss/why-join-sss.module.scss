@@ -1,0 +1,75 @@
+.section {
+  display: flex;
+  width: 100%;
+  padding: 6.25rem;
+  align-items: flex-start;
+  background: linear-gradient(180deg, #000138 0%, #172B54 100%);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.6875rem;
+  flex: 1;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1;
+}
+
+.heading {
+  align-self: stretch;
+  color: #FFF;
+  font-family: Oxanium;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.paragraph {
+  align-self: stretch;
+  color: #FFF;
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paragraph2 {
+  align-self: stretch;
+  color: #FFF;
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.imageContainer {
+  position: relative;
+  width: 31rem;
+  height: 23.1875rem;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
