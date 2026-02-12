@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import styles from "./page.module.scss";
 import Link from "next/link";
 // import styles from "./mixins.scss"
