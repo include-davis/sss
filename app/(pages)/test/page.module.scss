@@ -85,24 +85,23 @@
   height: 3.125rem;
   cursor: pointer;
   text-decoration: none;
-  z-index: 1;
 }
 .SSSButton::before
 {
-
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.08);
+  background: rgba(0, 0, 0, 0.17);
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform 0.3s ease;
-  z-index: -1;
 }
 .SSSButton:hover::before{
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
+
+
 
 .SVGContainer
 {
@@ -113,7 +112,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
-  position: static;
+  // position: static;
   right: 4rem;
   top: 4rem;
   max-width: none;
