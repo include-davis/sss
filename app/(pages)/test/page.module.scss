@@ -1,19 +1,29 @@
+
 .pageBody
 {
   background: var(--Blue-Gradiant);
   box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0;
-  // min-height: 100vh; // temp
+  min-height: 100vh; // temp
 }
 
 .content
 {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: normal;
   gap: 3rem;
   padding: 4rem 6rem;
+}
+
+
+.LeftContainer
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .softwareHeader
@@ -24,8 +34,10 @@
   font-weight: 500;
   line-height: normal;
   size: 3rem;
-  position: fixed;  
+  position: sticky;  
 }
+
+
 .softwareDescription
 {
   height: 9.75rem;
@@ -36,24 +48,87 @@
   color: var(--Off-White, #F7F7F7);
   width: 39.375rem;
   max-width: 45rem;
+  margin-top: 50%;
+  margin-top: 0;
 }
+
+.SSSButtonsContainer 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+
+}
+
+.SSSButton
+{
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  border: 0.5px solid var(--Off-White);
+  background: rgba(247, 247, 247, 0.90);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+  color: var(--Grey);
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  margin-left: 0.21rem;
+  padding: 0.625rem;
+  width: 19.6875rem;
+  height: 3.125rem;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1;
+}
+.SSSButton::before
+{
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.08);
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.SSSButton:hover::before{
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
 .SVGContainer
 {
   display: flex;
+  flex-direction: row;
   width: 32.125rem;
   padding: 2.67713rem 2.67713rem 3.32563rem 2.67706rem;
   justify-content: center;
-  align-items: center;
-  aspect-ratio: 1/1;
-  margin-left: auto;
-  position: sticky;
+  flex-direction: column;
+  align-items: flex-end;
+  position: static;
+  right: 4rem;
+  top: 4rem;
+  max-width: none;
 }
 
 .SVGContainer svg{
-  position: sticky;
+  // fill: var(--Off-White);
+  width: 26.77081rem;
+  height: 26.1221rem;  
   top: 4rem;
+  aspect-ratio: 1/1;
+
 } 
 :root{
   --Blue-Gradiant: linear-gradient(180deg, #000138 0%, #172B54 100%);
   --Off-White:#F7F7F7;
+  --Grey: #575757;
 }
