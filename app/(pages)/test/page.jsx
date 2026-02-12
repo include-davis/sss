@@ -1,8 +1,8 @@
-import Contact from "./_Contactform";
-export default function ContactPage(){
+import Contactform from "./_Contactform/Contact.jsx";
+export default function Page(){
     return(
         <main>
-            <Contact />
+            <Contactform />
         </main>
     );
 }
