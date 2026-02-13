@@ -5,7 +5,7 @@ export default function Test() {
   return (
     <main className={styles.main}>
       <div className={styles.main_title}>
-      <p>Current Projects</p>
+        <p>Current Projects</p>
       </div>
 
       <div className={styles.container}>
@@ -20,14 +20,14 @@ export default function Test() {
           <div className={styles.small_text}>
             <p>Estimated Launch Date: Summer 2026</p>
             <div className={styles.p}>
-            <br></br>
+              <br></br>
             </div>
             <p>Mission: Investigate a low cost alternative to traditional reaction wheels.</p>
           </div>
           <div className={styles.norm_text}>
             <p>Designed in house, REALOP I is SSS's first CubeSat with the goal to break down some of the financial barriers that keep teams from experimentation via CubeSats.</p>
             <div className={styles.p}>
-            <br></br>
+              <br></br>
             </div>
             <p>We have an official launch contract with NASA to put REALOP into low Earth orbit.</p>
           </div>
