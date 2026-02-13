@@ -112,13 +112,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
-  // position: static;
+  position: static;
   right: 4rem;
   top: 4rem;
   max-width: none;
 }
 
-.SVGContainer svg{
+.SVGContainer .softwareSVG{
   // fill: var(--Off-White);
   width: 26.77081rem;
   height: 26.1221rem;  
