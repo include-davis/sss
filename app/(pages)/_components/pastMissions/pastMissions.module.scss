@@ -1,5 +1,5 @@
 .PastMissions {
-  background-color: var(--white);
+  background-color: var(--off-white);
   padding: 42.4px 90px; 
 }
 
@@ -20,7 +20,6 @@
   h1 {
     font-family: Oxanium;
     font-size: 3rem;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
@@ -66,7 +65,7 @@
     width: 28.125rem;
     align-self: stretch;
     border-radius: 0.9375rem 0.9375rem 0 0;
-    border: 1px solid var(--navy);
+    border: 1px solid var(--midnight);
   }
 }
 
@@ -80,12 +79,12 @@
   gap: 1rem;
   align-self: stretch;
   border-radius: 0 0 0.9375rem 0.9375rem;
-  background: var(--navy);
+  background: var(--midnight);
   height: 20.375rem;
 
   h2{
     // project title 
-    color: var(--white);
+    color: var(--off-white);
     font-family: Oxanium;
     font-size: 2.5rem;
     font-weight: 500;
@@ -102,7 +101,6 @@
     color: var(--light-gray);
     font-family: "Space Grotesk";
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 400;
   }
   button{
@@ -116,11 +114,11 @@
     gap: 0.625rem;
 
     border-radius: 0.3125rem;
-    border: 0.5px solid var(--white);
-    background: var(--white);
+    border: 0.5px solid var(--off-white);
+    background: var(--off-white);
 
     // text
-    color: var(--dark-gray);
+    color: var(--gray);
     font-family: "Space Grotesk";
     font-size: 1rem;
     font-weight: 500;
