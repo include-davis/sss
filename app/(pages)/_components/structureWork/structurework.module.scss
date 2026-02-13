@@ -1,5 +1,5 @@
 .structureWork {
-  background-color: var(--white);
+  background-color: var(--off-white);
   padding: 42.4px 90px; 
 }
 
@@ -21,7 +21,6 @@
   h1 {
     font-family: Oxanium;
     font-size: 3rem;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
@@ -29,7 +28,7 @@
 
 .text {
     align-items: stretch;
-    color: var(--black);
+    color: var(--off-black);
     /* Body */
     font-family: "Space Grotesk";
     font-size: 1.25rem;
@@ -86,10 +85,10 @@
     align-self: stretch;
 
     border-radius: 0 0 0.9375rem 0.9375rem;
-    background: var(--navy);
+    background: var(--midnight);
 
     h3 {
-    color: var(--white);
+    color: var(--off-white);
     /* Subtext */
     font-family: "Space Grotesk";
     font-size: 1rem;
