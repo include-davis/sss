@@ -92,14 +92,24 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.17);
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transform: scaleX(0); // slide is off
   transition: transform 0.3s ease;
 }
 .SSSButton:hover::before{
-  transform-origin: 0% 50%;
-  transform: scaleX(1);
+  animation: slideOverlay 0.3s forwards; 
 }
+
+@keyframes slideOverlay
+{
+  from{
+    transform: scaleX(0);
+  }
+  to{
+    transform: scaleX(1); // slide is on
+  }
+} 
+// ^^used to for translation smoothly
 
 
 
