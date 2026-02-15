@@ -9,10 +9,11 @@
 .carousel{
     //margin: 100px auto;
     width: 100%;
-    border: 1rem solid black;
+    //border: 0.2rem solid black;
     display:flex;
     overflow-x: auto;
     margin-bottom: 2rem;
+    //background-color: grey;
 }
 .carousel::-webkit-scrollbar{
     display: none
@@ -39,10 +40,10 @@
 }
 .box{
     flex: 0 0 23.6875rem;
-    height: 12.5rem;
+    height: 12.875rem;
     width: 23.6875rem;
     padding:1em;
-    border-radius:  .2em;
+    border-radius:  .63rem;
     font-size: 2rem;
     background: white;
     text-align: center;
@@ -58,4 +59,8 @@
 @keyframes spin2 {
     from {translate: -100%;}
     to {translate: 0;}
+}
+
+.image{
+    display: flex;
 }

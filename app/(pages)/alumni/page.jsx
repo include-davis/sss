@@ -11,42 +11,67 @@ export default function Alumni() {
       <div className={styles.carousel}>
         <div className={styles.group}>
           <div className={styles.box}>
-            1
+            <div className={styles.image}>
+              <img src="/image8.png" height="100"/>
+            </div>
           </div>
           <div className={styles.box}>
-            2 
+            <div className={styles.image}>
+              <img src="/image14.png" height="70"/>
+            </div>
           </div>
           <div className={styles.box}>
-            3
+            <div className={styles.image}>
+              <img src="/image9.png" height="90"/>
+            </div>
+          </div> 
+          <div className={styles.box}>
+            <div>
+              <img src="/image13.png" height="130"/>
+            </div>
           </div>
           <div className={styles.box}>
-            4
+            <div className={styles.image}>
+              <img src="/image1.png" height="40"/>
+            </div>  
           </div>
           <div className={styles.box}>
-            5
-          </div>
-          <div className={styles.box}>
-            6
+            <div>
+              <img src="/image2.png" height="130"/>
+            </div>
           </div>
         </div>
+
         <div aria-hidden className={styles.group}>
           <div className={styles.box}>
-            1
+            <div className={styles.image}>
+              <img src="/image8.png" height="100"/>
+            </div>
           </div>
           <div className={styles.box}>
-            2 
+            <div className={styles.image}>
+              <img src="/image14.png" height="70"/>
+            </div> 
           </div>
           <div className={styles.box}>
-            3
+            <div className={styles.image}>
+              <img src="/image9.png" height="90"/>
+            </div>
           </div>
           <div className={styles.box}>
-            4
+            <div>
+              <img src="/image13.png" height="130"/>
+            </div>
           </div>
           <div className={styles.box}>
-            5
+            <div className={styles.image}>
+              <img src="/image1.png" height="40"/>
+            </div>
           </div>
           <div className={styles.box}>
-            6
+            <div>
+              <img src="/image2.png" height="130"/>
+            </div>
           </div>
         </div>
       </div>
@@ -57,51 +82,81 @@ export default function Alumni() {
       <div className={styles.carousel}>
         <div className={styles.group2}>
           <div className={styles.box}>
-            1
+            <div>
+              <img src="/image20.png" height="110"/>
+            </div>
           </div>
           <div className={styles.box}>
-            2 
+            <div>
+              <img src="/image21.png" height="155"/>
+            </div>
           </div>
           <div className={styles.box}>
-            3
+            <div>
+              <img src="/image22.png" height="150"/>
+            </div>
+          </div> 
+          <div className={styles.box}>
+            <div>
+              <img src="/image23.png" height="90"/>
+            </div>
+          </div> 
+          <div className={styles.box}>
+            <div>
+              <img src="/image24.png" height="155"/>
+            </div>  
           </div>
           <div className={styles.box}>
-            4
-          </div>
+            <div>
+              <img src="/image25.png" height="60"/>
+            </div>
+          </div> 
           <div className={styles.box}>
-            5
-          </div>
-          <div className={styles.box}>
-            6
-          </div>
-          <div className={styles.box}>
-            7
-          </div>
+            <div>
+              <img src="/image26.png" height="150"/>
+            </div>
+          </div> 
         </div>
+
         <div aria-hidden className={styles.group2}>
           <div className={styles.box}>
-            1
+            <div>
+              <img src="/image20.png" height="110"/>
+            </div>
           </div>
           <div className={styles.box}>
-            2 
+            <div>
+              <img src="/image21.png" height="155"/>
+            </div> 
           </div>
           <div className={styles.box}>
-            3
+            <div>
+              <img src="/image22.png" height="150"/>
+            </div>
           </div>
           <div className={styles.box}>
-            4
+            <div>
+              <img src="/image23.png" height="90"/>
+            </div>
+          </div> 
+          <div className={styles.box}>
+            <div>
+              <img src="/image24.png" height="155"/>
+            </div>
           </div>
           <div className={styles.box}>
-            5
-          </div>
+            <div>
+              <img src="/image25.png" height="60"/>
+            </div>
+          </div> 
           <div className={styles.box}>
-            6
-          </div>
-          <div className={styles.box}>
-            7
-          </div>
+            <div>
+              <img src="/image26.png" height="150"/>
+            </div>
+          </div> 
+          
         </div>
       </div>
     </main>
   );
-}
+} 
