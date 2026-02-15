@@ -8,27 +8,100 @@ export default function Alumni() {
       <div className={styles.main_title}>
         <p>Where our Alumni have gone</p>
       </div>
-      <div>
-        <div>
-          1
+      <div className={styles.carousel}>
+        <div className={styles.group}>
+          <div className={styles.box}>
+            1
+          </div>
+          <div className={styles.box}>
+            2 
+          </div>
+          <div className={styles.box}>
+            3
+          </div>
+          <div className={styles.box}>
+            4
+          </div>
+          <div className={styles.box}>
+            5
+          </div>
+          <div className={styles.box}>
+            6
+          </div>
         </div>
-        <div>
-          2
-        </div>
-        <div>
-          3
-        </div>
-        <div>
-          4
-        </div>
-        <div>
-          5
-        </div>
-        <div>
-          6
+        <div aria-hidden className={styles.group}>
+          <div className={styles.box}>
+            1
+          </div>
+          <div className={styles.box}>
+            2 
+          </div>
+          <div className={styles.box}>
+            3
+          </div>
+          <div className={styles.box}>
+            4
+          </div>
+          <div className={styles.box}>
+            5
+          </div>
+          <div className={styles.box}>
+            6
+          </div>
         </div>
       </div>
 
+
+
+
+      <div className={styles.carousel}>
+        <div className={styles.group2}>
+          <div className={styles.box}>
+            1
+          </div>
+          <div className={styles.box}>
+            2 
+          </div>
+          <div className={styles.box}>
+            3
+          </div>
+          <div className={styles.box}>
+            4
+          </div>
+          <div className={styles.box}>
+            5
+          </div>
+          <div className={styles.box}>
+            6
+          </div>
+          <div className={styles.box}>
+            7
+          </div>
+        </div>
+        <div aria-hidden className={styles.group2}>
+          <div className={styles.box}>
+            1
+          </div>
+          <div className={styles.box}>
+            2 
+          </div>
+          <div className={styles.box}>
+            3
+          </div>
+          <div className={styles.box}>
+            4
+          </div>
+          <div className={styles.box}>
+            5
+          </div>
+          <div className={styles.box}>
+            6
+          </div>
+          <div className={styles.box}>
+            7
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

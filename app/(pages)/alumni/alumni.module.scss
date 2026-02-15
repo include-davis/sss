@@ -6,6 +6,56 @@
     padding-bottom: 4.91rem;
 }
 
-.box{
+.carousel{
+    //margin: 100px auto;
+    width: 100%;
+    border: 1rem solid black;
+    display:flex;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+.carousel::-webkit-scrollbar{
+    display: none
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.88rem;
+    animation: spin 30s infinite linear;
+    padding-right: 1.88rem;
     
+}
+
+.group2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.88rem;
+    animation: spin2 30s infinite linear;
+    padding-right: 1.88rem;
+    
+}
+.box{
+    flex: 0 0 23.6875rem;
+    height: 12.5rem;
+    width: 23.6875rem;
+    padding:1em;
+    border-radius:  .2em;
+    font-size: 2rem;
+    background: white;
+    text-align: center;
+    align-content: center;
+
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+@keyframes spin2 {
+    from {translate: -100%;}
+    to {translate: 0;}
 }
