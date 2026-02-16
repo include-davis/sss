@@ -18,30 +18,8 @@ export default function PastMissions() {
           <h1>Past Missions</h1>
         </div>
         
-        <div className={styles.carsouelWrapper}>
+        <div className={styles.carouselWrapper}>
           <div className={styles.projectGrid}>
-            {projects.map((project, index) => (
-              <div key={index} className={styles.projectCard}>
-                <div className={styles.image}>
-                  <Image 
-                    src={project.src} 
-                    width={project.width} 
-                    height={project.height}
-                    alt={project.alt}
-                    className={styles.img}
-                  />
-                </div>
-
-                <div className={styles.cardLabel}>
-                  <h2>{project.title}</h2>
-                  <h3>{project.date}</h3>
-                  <h4>{project.mission}</h4>
-                  <button className={project.button}> Learn More </button>
-                </div>
-              </div>
-            ))}
-
-          
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
                 <div className={styles.image}>
