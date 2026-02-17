@@ -4,6 +4,20 @@ import Image from "next/image";
 export default function WhyJoinSSS({ heading, paragraph1, paragraph2 }) {
   return (
     <section className={styles.section}>
+      <Image
+        src="/assets/images/why-join-sss-bg.png"
+        alt=""
+        fill
+        className={styles.bgImage}
+        aria-hidden
+      />
+      <Image
+        src="/assets/images/dbdaab0906d99cb4e21fb4054cc087831e785112.png"
+        alt=""
+        fill
+        className={styles.starLayer}
+        aria-hidden
+      />
       <div className={styles.content}>
         <div className={styles.textGroup}>
           <h2 className={styles.heading}>{heading}</h2>
