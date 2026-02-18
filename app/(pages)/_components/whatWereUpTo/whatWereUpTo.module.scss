@@ -107,7 +107,9 @@
     border-radius: 0.3125rem;
     border: 0.5px solid var(--off-white);
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
-    background: var(--off-white) 90%;
+    background: rgb(from var(--off-white) r g b / 0.9);
+    gap: 0.625rem;
+    flex-shrink: 0;
 
     color: var(--gray);
     font-family: "Space Grotesk";
