@@ -36,7 +36,7 @@ export default function PastMissions() {
                   <h2>{project.title}</h2>
                   <h3>{project.date}</h3>
                   <h4>{project.mission}</h4>
-                  <button className={project.button}> Learn More </button>
+                  <button> Learn More </button>
                 </div>
               </div>
             ))}

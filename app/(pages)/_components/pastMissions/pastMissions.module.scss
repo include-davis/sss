@@ -39,7 +39,6 @@
 .projectGrid {
   // for the project layout 
   display: flex;
-  padding: 0.625rem 6.25rem;
   flex-direction: row;
   align-items: flex-start;
   gap: 0.625rem;
@@ -103,8 +102,8 @@
       padding: 0.63rem;
       border-radius: 0.3125rem;
       background: var(--off-white);
-      box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
       border-color: var(--off-white);
+      box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
 
       // text
       color: var(--gray);
@@ -113,9 +112,9 @@
       font-weight: 500;
       position: absolute;
       bottom: 2rem;
+      &:hover{
+        background:var(--off-white) ;
     }
-    &hover{
-      background:var(--off-white) ;
-    }
+  }
   }
 }
