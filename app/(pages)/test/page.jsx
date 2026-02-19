@@ -1,4 +1,4 @@
-import Navbar from "./_Navbar/Nav.jsx";
+import Navbar from "../Navbar/Nav.jsx";
 export default function Page() {
     return (
       <main>
