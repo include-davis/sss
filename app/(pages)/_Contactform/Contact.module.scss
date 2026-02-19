@@ -8,11 +8,11 @@
 .title{
     font-family: Oxanium; 
     color: var(--Navy);
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .form{
@@ -24,13 +24,14 @@
 .row{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem; 
+    gap: 1.6rem; 
   }
 
 .field{
     display: flex;
     flex-direction: column; 
     gap: 0.4rem;
+    
 }
 
 .field label {
@@ -44,7 +45,7 @@
     width: 100%;
     padding: 1rem; 
     border-radius: 0.6rem; 
-    border: 1px solid #dcdcdc;
+    border: 1px solid var(--light-gray);
     font-family: "Space Grotesk", sans-serif;
     color: var(--light-gray);
     font-size: 0.8rem;
