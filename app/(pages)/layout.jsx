@@ -1,4 +1,4 @@
-import Navbar from "./Navbar/Nav.jsx";
+import Navbar from "../_components/Navbar/Nav.jsx";
 import "./_globals/globals.scss";
 import { Oxanium, Space_Grotesk } from "next/font/google";
 
