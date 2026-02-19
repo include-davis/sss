@@ -29,7 +29,7 @@ export default function WhatWereUpTo() {
     <main className={styles.container}>
       <h1 className={styles.title}>What we're up to:</h1>
       
-      <div className={styles.cardGrid}>
+      <div className={styles.cardsContainer}>
         {projects.map((project, index) => (
           <section key={index} className={styles.card}>
             <div className={styles.cardHeader}>

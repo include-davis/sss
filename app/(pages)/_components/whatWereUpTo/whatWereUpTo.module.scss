@@ -16,9 +16,9 @@
   line-height: normal;
 }
 
-.cardGrid {
+.cardsContainer {
   display: flex;
-  gap: 1.31rem;
+  justify-content: space-between;
   width: 100%;
 }
 
