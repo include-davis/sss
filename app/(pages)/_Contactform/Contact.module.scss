@@ -1,46 +1,71 @@
 .container{
-    display: flex;
-    width: 77.625rem;
-    flex-direction: column;
+    width: 100%;
     max-width:1000px;
     margin: 6rem auto;
     padding: 3rem;
-    background-color: var(--white);
-    box-shadow: 0 5px 50px rgba(0,0,0,0.08);
-    border-radius: 1.5rem;
 }
 
 .title{
     font-family: Oxanium; 
     color: var(--Navy);
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 2rem;
 }
 
 .form{
     display: flex;
     flex-direction: column; 
-    align-items: flex-end;
-    gap: 3.5rem;
-    align-self: stretch;
+    gap: 1rem;
 }
 
 .row{
-    display:flex;
-    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem; 
+  }
 
-    input{
-        flex: 1; 
-    }
+.field{
+    display: flex;
+    flex-direction: column; 
+    gap: 0.4rem;
 }
 
-input, 
-textarea{ 
-    
+.field label {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--dark-gray);
 }
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 1rem; 
+    border-radius: 0.6rem; 
+    border: 1px solid #dcdcdc;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--light-gray);
+    font-size: 0.8rem;
+    font-weight:200;
+  }
+
+  .form textarea{
+    min-height: 140px;
+    resize: vertical;
+  }
+
+
 .submit{
+    align-self: flex-end;
+    padding: 0.7rem 2.2rem;
+    border-radius: 0.6rem;
+    border: 0.5px solid var(--light-gray);
+    background: rgba(87,87, 87, 0.80); 
+    color: white; 
+    margin-top: 1.2rem;
+    cursor: pointer;
+    
 
 }

@@ -41,7 +41,10 @@ export default function Contact() {
             <h2 className={styles.title}>Let's get in touch!</h2>
             
             <form onSubmit={handleSubmit} className={styles.form}>
+                {/* Row 1 */}
                 <div className={styles.row}>
+                   <div className={styles.field}>
+                    <label>First Name</label>
                     <input 
                         type="text"
                         name="firstName"
@@ -50,7 +53,10 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                     />
+                  </div>
 
+                  <div className={styles.field}>
+                    <label>Last Name</label>
                     <input 
                         type="text"
                         name="lastName"
@@ -59,7 +65,13 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                     />
+                   </div> 
+                </div>
 
+                    {/* Row 2 */}
+                <div className={styles.row}>
+                   <div className={styles.field}>
+                    <label>E-mail Address</label>
                     <input 
                         type="email"
                         name="email"
@@ -68,7 +80,10 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                     />
+                   </div>
 
+                   <div className={styles.field}>
+                    <label>Subject</label>
                     <input
                         type="text"
                         name="subject"
@@ -76,19 +91,24 @@ export default function Contact() {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                    />
+                      />
+                    </div>
+                </div>
 
-                    <input
-                        type="text"
+                 {/* Message */}
+                  <div className={styles.field}>
+                    <label>Message</label>
+                    <textarea
                         name="message"
                         placeholder="Enter Your Message Here"
                         value={formData.message}
                         onChange={handleChange}
                         required 
                     />
+                </div>
 
-                    <button type ="submit" className={styles.submit}>Send Message</button> 
-                    </div>
+                    <button type ="submit" className={styles.submit}>
+                        Send Message</button> 
                  </form>
         </section>
      );
