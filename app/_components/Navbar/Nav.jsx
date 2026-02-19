@@ -12,8 +12,8 @@ export default function Navbar({logoSrc, logoAl, pages}) {
         <Image
           src="/favicon.png"
           alt="Space and Satellite Systems"
-          width={48}
-          height={48}
+          width={140}
+          height={140}
           priority
         />
       </Link>
