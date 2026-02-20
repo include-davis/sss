@@ -2,14 +2,12 @@
 
 .container {
   display: flex;
-  width: 100vw;
-  height: 30.1875rem;
   padding: 5.5625rem 5.625rem;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.625rem;
-  background: linear-gradient(180deg, var(--midnight) 0%, var(--navy) 100%);
+  background: linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%);
   box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -22,14 +20,13 @@
 
 .header {
   display: flex;
-  height: 16.3125rem;
   padding: 0.625rem;
   align-items: flex-start;
   gap: 0.625rem;
 }
 
 .title {
-  color: var(--white);
+  color: var(--off-white);
   font-family: "Oxanium";
   font-size: 2rem;
   font-style: normal;
@@ -40,23 +37,23 @@
 .divider {
   width: 0.0625rem;
   height: 16.3175rem;
-  background: var(--white);
+  flex-shrink: 0;
+  background: var(--off-white);
 }
 
 .content {
   display: flex;
-  width: 59.75rem;
-  height: 16.3125rem;
   padding: 0.625rem;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
 }
 
 .textBlock {
   display: flex;
+  max-width: 59.75rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
@@ -65,7 +62,7 @@
 
 .subtitle {
   align-self: stretch;
-  color: var(--white);
+  color: var(--off-white);
   font-family: "Space Grotesk";
   font-size: 1.25rem;
   font-style: normal;
@@ -75,7 +72,7 @@
 
 .body {
   align-self: stretch;
-  color: var(--white);
+  color: var(--off-white);
   font-family: "Space Grotesk";
   font-size: 1.25rem;
   font-style: normal;
