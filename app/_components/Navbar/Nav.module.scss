@@ -1,30 +1,20 @@
 .nav {
   display: flex;
-  width: 100%;
-  padding: 2rem 3.5rem;
-  flex-direction: row; 
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 1.6rem 5rem;
+  flex-direction: row; 
   gap: 0.625rem;
-  background-color: var(--white);
-  
-  
-  position: fixed;
+  background-color: var(--off-white);
 }
 
-.logo {
-  display: flex;
+.right{
+  display:flex;
   align-items: center;
-  flex-shrink:0;
-
-  img {
-    height: 4rem;
-    width:auto;
-
-  }
 }
 
 .pages {
-  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -40,7 +30,7 @@
   a {
     font-family: "Space Grotesk";
     color: var(--black);        
-    font-size: 0.95rem;
+    font-size: 0.99rem;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;

@@ -12,18 +12,19 @@ export default function Navbar({logoSrc, logoAl, pages}) {
         <Image
           src="/favicon.png"
           alt="Space and Satellite Systems"
-          width={140}
-          height={140}
-          priority
+          width={100}
+          height={100}
         />
       </Link>
+      <div className={styles.right}>
       <ul className={styles.pages}>
-        <li><Link href="/">Home</Link></li>
+        <li><Link href="/Home">Home</Link></li>
         <li><Link href="/missions">Missions</Link></li>
         <li><Link href="/teams">Teams</Link></li>
         <li><Link href="/sponsor">Sponsor Us</Link></li>
         <li><Link href="/join">Join Us</Link></li>
       </ul>
+      </div>
     </nav>
   );
 }
