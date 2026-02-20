@@ -1,0 +1,118 @@
+@use '@/app/(pages)/_globals/mixins.scss';
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:3.5rem;
+    align-self: stretch;
+}
+
+.title{
+    align-self: stretch;
+    font-family: 'Oxanium';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--Space-Blue, #172B54);
+}
+
+.benefitForSponsor{
+    width: 43.375rem;
+    color: black;
+    font-family: 'Space Grotesk';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.benefitSponsorContainer{
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.9375rem;
+    background: white;
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+}
+
+.BenefitLevelContainer{
+    display: flex;
+    width: 11.25rem;
+    height: 9.125rem;
+    padding: 2.5625rem 1.5625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.4375rem;
+    background-color: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+
+}
+
+.BenefitLevel{
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.Benefitamount{
+    /*subtext*/ 
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.SponsorPacket{
+    display: flex;
+    width: 38.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.SponsorPacketButton{
+    display: flex;
+    width: 14.0625rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+    border-radius: 0.3125rem;
+    border: 0.5px solid var(--light-gray, #B6B6B6);
+    background: rgba(87, 87, 87, 0.80);
+
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+
+}
+
+.SponosorPacketStyle{
+    color: var(--Off-White, #F7F7F7);
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.SponsorLearnMore{
+    color: var(--Grey, #575757);
+    font-family: 'Space Grotesk';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
