@@ -5,7 +5,6 @@
   box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0;
-  min-height: 100vh; // temp
 }
 
 .content
@@ -58,7 +57,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 1.5rem;
 
 }
 
@@ -78,8 +77,6 @@
   font-family: "Space Grotesk";
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 0.75rem;
-  margin-left: 0.21rem;
   padding: 0.625rem;
   width: 19.6875rem;
   height: 3.125rem;
@@ -112,7 +109,6 @@
 // ^^used to for translation smoothly
 
 
-
 .SVGContainer
 {
   display: flex;
@@ -125,17 +121,9 @@
   position: static;
   right: 4rem;
   top: 4rem;
-  max-width: none;
 }
 
-.SVGContainer .softwareSVG{
-  // fill: var(--Off-White);
-  width: 26.77081rem;
-  height: 26.1221rem;  
-  top: 4rem;
-  aspect-ratio: 1/1;
 
-} 
 :root{
   --Blue-Gradiant: linear-gradient(180deg, #000138 0%, #172B54 100%);
   --Off-White:#F7F7F7;
