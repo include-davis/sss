@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.6rem 5rem;
+  flex-direction: row; 
+  gap: 0.625rem;
+  background-color: var(--white);
+}
+
+.right{
+  display:flex;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  
+  list-style: none; 
+
+  li {
+    list-style: none; // 
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    font-family: "Space Grotesk";
+    color: var(--black);        
+    font-size: 0.99rem;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+
+    position: relative;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--navy);
+    }
+  }
+}
