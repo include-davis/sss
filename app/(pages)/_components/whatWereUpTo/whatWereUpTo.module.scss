@@ -1,0 +1,123 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  color: var(--off-black);
+  font-family: Oxanium;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--off-white);
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+}
+
+.card:first-child {
+  .missionText {
+    color: var(--off-white);
+  }
+
+  .launchDate {
+    color: var(--off-white);
+  }
+}
+
+.cardHeader {
+  height: 13.875rem;
+  width: 25rem;
+}
+
+.cardHeader img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  align-self: stretch;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  border: 0.0625rem solid var(--space-blue);
+}
+
+
+.cardBody {
+  display: flex;
+  height: 22.1875rem;
+  width: 25rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: var(--Blue-Gradient, linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%));
+
+
+  .projectTitle {
+    color: var(--off-white);
+    font-family: Oxanium;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+  }
+
+  .launchDate {
+    color: var(--light-gray);
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+
+  .missionText {
+    color: var(--light-gray);
+    font-family: "Space Grotesk";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 2.5rem;
+  }
+  
+  .button {
+    display: flex;
+    padding: 1rem 0.625rem;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3125rem;
+    border: 0.5px solid var(--off-white);
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+    background: rgb(from var(--off-white) r g b / 0.9);
+    gap: 0.625rem;
+    flex-shrink: 0;
+
+    color: var(--gray);
+    font-family: "Space Grotesk";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+  }
+
+}
