@@ -1,0 +1,28 @@
+.TopContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.TopContent h1
+{
+  align-self: stretch;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+// replace with classname
+.TopContent p
+{
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: --var(--black);
+  align-self: stretch;
+
+}
