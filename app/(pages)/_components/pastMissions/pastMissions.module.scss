@@ -1,0 +1,120 @@
+.PastMissions {
+  background-color: var(--off-white);
+  padding: 0 6.25rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+
+  h1 {
+    font-family: Oxanium;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+@keyframes spin {
+  from { translate: 0; }
+  to { translate: -50%; }
+}
+
+.carouselWrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.projectGrid {
+  // for the project layout 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.625rem;
+  width: max-content;
+}
+
+.projectCard {
+  // for each project
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  display: flex;
+  width: 28.125rem;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  .image {
+    img {
+    display: block;
+    height: 15.625rem;
+    width: 28.125rem;
+    align-self: stretch;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    border: 1px solid var(--midnight);
+    }
+  }
+
+  .cardLabel {
+    // project card below image 
+    padding: 2rem;
+    border-radius: 0 0 0.9375rem 0.9375rem;
+    background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+    height: 20.375rem;
+    position: relative;
+
+    h2{
+      // project title 
+      color: var(--off-white);
+      font-family: Oxanium;
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin: 0 0 0.5rem 0;
+    }
+    h3 {
+      // sub text
+      color: var(--light-gray);
+      font-family: "Space Grotesk";
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0 0 1rem 0;
+    }
+    h4{
+      // body text 
+      color: var(--light-gray);
+      font-family: "Space Grotesk";
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin: 0 0 2rem 0;
+    }
+    button{
+      // button
+      padding: 0.63rem;
+      border-radius: 0.3125rem;
+      background: var(--off-white);
+      border-color: var(--off-white);
+      box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+
+      // text
+      color: var(--gray);
+      font-family: "Space Grotesk";
+      font-size: 1rem;
+      font-weight: 500;
+      position: absolute;
+      bottom: 2rem;
+      &:hover{
+        background:var(--off-white) ;
+    }
+  }
+  }
+}
