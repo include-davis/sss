@@ -1,0 +1,128 @@
+
+.pageBody
+{
+  // background: linear-gradient(180deg, #000138 0%, #172B54 100%);
+  background: var(--navy);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 6rem;
+  // makes the page flex items align with window size (let me know to remove this)
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+// puts the header, description, and buttons to the left
+.LeftContainer
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.softwareHeader
+{
+  color: #FFF;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  size: 3rem;
+  position: sticky;  
+}
+
+
+.softwareDescription
+{
+  height: 9.75rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Space Grotesk";
+  color: var(--white);
+  width: 39.375rem;
+  max-width: 45rem;
+  margin-top: 50%;
+  margin-top: 0;
+}
+
+.SSSButtonsContainer 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+
+}
+
+.SSSButton
+{
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  border: 0.5px solid var(--Off-White);
+  background: rgba(247, 247, 247, 0.90);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+  color: var(--dark-gray); // change
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8125rem 2rem;
+  min-width: 19.6875rem; // Allows the buttons to be even-sized horizontally no matter how long text is
+  cursor: pointer;
+  text-decoration: none;
+}
+.SSSButton::before
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.17);
+  transform-origin: 0% 50%;
+  transform: scaleX(0); // slide is off
+  transition: transform 0.3s ease;
+}
+.SSSButton:hover::before{
+  animation: slideOverlay 0.3s forwards; 
+}
+
+@keyframes slideOverlay
+{
+  from{
+    transform: scaleX(0);
+  }
+  to{
+    transform: scaleX(1); // slide is on
+  }
+} 
+// ^^used to for translation smoothly
+
+
+.SVGContainer
+{
+  display: flex;
+  align-self: center;
+  padding-right: 4rem;
+  flex-shrink: 0;
+}
+
+// :root{
+//   --Blue-Gradiant: linear-gradient(180deg, #000138 0%, #172B54 100%);
+//   --Off-White:#F7F7F7;
+//   --Grey: #575757;
+// }
