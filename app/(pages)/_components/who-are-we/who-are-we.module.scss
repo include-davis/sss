@@ -1,0 +1,76 @@
+.section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background:
+    url("/assets/images/who-are-we/Frame 1618873244 (2).png") center / cover
+      no-repeat,
+    linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%);
+}
+
+.starLayer {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+
+.textColumn {
+  display: flex;
+  width: 715px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.heading {
+  align-self: stretch;
+  color: var(--white);
+  font-family: "Oxanium";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3 {
+  align-self: stretch;
+  color: var(--white);
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.photoWrapper {
+  position: relative;
+  width: 450px;
+  height: 371px;
+  border-radius: 5px;
+  overflow: hidden;
+}
