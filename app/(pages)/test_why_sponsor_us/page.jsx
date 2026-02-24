@@ -3,8 +3,9 @@ import styles from './page.module.scss';
 export default function Whysponsorus(){
     return(
         <div className={styles.container}>
-            {/* 
-            <Image className={styles.picture} src='...' alt='..'  width=.. height...           */} 
+            <div className={styles.textPictureContainer}>
+            {/*use this if path to image don't work <Image src="/public/Mask-group 1.png" alt="Team Picture" className={styles.picture} ></Image>*/}
+            <Image alt="Team Picture" className={styles.picture}/>
             <h1 className={styles.SponsorUsTitle}>Why should you sponsor us?</h1>
             <ul className={styles.benefits}>
                 <li>Tax Benefits for a charitable donation</li>
@@ -13,6 +14,7 @@ export default function Whysponsorus(){
                 <li>Help Students connect theory and pracitcal</li>
                 <li>Recruit from our club for interns or full time offers</li>
             </ul>
+            </div>
         </div>
 
 
