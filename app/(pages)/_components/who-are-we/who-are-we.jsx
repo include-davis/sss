@@ -4,14 +4,6 @@ import styles from "./who-are-we.module.scss";
 export default function WhoAreWe() {
   return (
     <section className={styles.section}>
-      <Image
-        className={styles.starLayer}
-        src="/assets/images/who-are-we/layer.png"
-        alt=""
-        fill
-        sizes="100vw"
-      />
-
       <div className={styles.container}>
         <div className={styles.textColumn}>
           <h2 className={styles.heading}>Who are we?</h2>

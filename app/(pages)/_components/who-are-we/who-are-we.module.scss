@@ -13,17 +13,7 @@
     linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%);
 }
 
-.starLayer {
-  position: absolute;
-  inset: 0;
-  object-fit: cover;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .container {
-  position: relative;
-  z-index: 1;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -41,7 +31,7 @@
 
 .heading {
   align-self: stretch;
-  color: var(--white);
+  color: var(--off-white);
   font-family: "Oxanium";
   font-size: 48px;
   font-weight: 500;
@@ -60,7 +50,7 @@
 .paragraph2,
 .paragraph3 {
   align-self: stretch;
-  color: var(--white);
+  color: var(--off-white);
   font-family: "Space Grotesk";
   font-size: 24px;
   font-weight: 400;
