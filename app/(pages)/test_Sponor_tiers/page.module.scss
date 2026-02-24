@@ -28,6 +28,13 @@
     line-height: normal;
 }
 
+.benfitContainer{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    align-self: stretch;
+}
+
 .benefitSponsorContainer{
     display: flex;
     padding: 1.25rem;
@@ -96,6 +103,10 @@
     background: rgba(87, 87, 87, 0.80);
 
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s;
+    &:hover {
+        cursor: pointer;  
+    }
 
 }
 
