@@ -20,11 +20,11 @@ export default function Membercard({
 
             <div className={styles.info}>
                 <div className={styles.topRow}>
-                    <h3>{name}</h3>
+                    <h3 className={styles.name}>{name}</h3>
 
                     {emailLink && (
                         <a href={`mailto:${emailLink}`} className={styles.email}>
-                            <Mail size ={18} />
+                            <Mail size ={27} />
                         </a>
                     )}
                 </div>
