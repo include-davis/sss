@@ -1,15 +1,16 @@
 .card{
     width: 320px;
-    border-radius: 14px;
-    background: var(--white);
-    padding: 16px;
+    border-radius: 16px;
+    background: var(--off-white);
+    padding: 20px;
 }
 .imageContainer{
     width:100%;
     aspect-ratio: 1/1; 
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    border: 2px solid var(--spaceblue);
+    border: 2.353px solid var(--space-blue);
+   
 }
 .imageContainer img{
     width: 100%;
@@ -31,9 +32,9 @@
 }
 .name{
     font-family:"Space Grotesk";
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--spaceblue);
-    font-weight: 330;
+    font-weight: 335;
 }
 .email{
     color: var(--light-gray);
