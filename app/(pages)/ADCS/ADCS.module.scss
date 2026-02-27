@@ -24,5 +24,14 @@
   line-height: normal;
   color: --var(--black);
   align-self: stretch;
+}
+
+.Group
+{
+  display: flex;
+  padding: 0.625rem 3.125rem;
+  align-items: center;
+  gap: 1.25rem;
+  align-self: stretch;
 
 }
