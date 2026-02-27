@@ -33,5 +33,5 @@ export default function Membercard({
                 <p className={styles.department}>{department}</p>
             </div>
         </div>
-    )
+    );
 }
