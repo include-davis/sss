@@ -1,0 +1,55 @@
+.card{
+    width: 320px;
+    border-radius: 16px;
+    background: var(--off-white);
+    padding: 20px;
+}
+.imageContainer{
+    width:100%;
+    aspect-ratio: 1/1; 
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2.353px solid var(--space-blue);
+   
+}
+.imageContainer img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.placeholder{
+    width: 100%;
+    height:100%;
+    background: #e6e6e6;
+}
+.info{
+    margin-top:25px;
+}
+.topRow{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    font-family:"Space Grotesk";
+    font-size: 1.6rem;
+    color: var(--spaceblue);
+    font-weight: 335;
+}
+.email{
+    color: var(--light-gray);
+    display:flex;
+}
+.title{
+    margin: 7px 0 2px;
+    color: var(--spaceblue);
+    font-family:"Space Grotesk";
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.department{
+     margin: 7px 0 2px;
+    color:var(--gray);
+    font-family:"Space Grotesk";
+    font-size: 1.1rem;
+}
