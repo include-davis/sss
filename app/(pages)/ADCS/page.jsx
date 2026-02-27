@@ -23,7 +23,7 @@ export default function ADCS() {
         <div className={styles.Group}>
           <div className={styles.card}>
             <Image
-              src={"/public/sunsensor.png"}
+              src="/sunsensor.png"
               width={500}
               height={500}
               alt="Picture of Sun Sensor Testing Rig"
@@ -31,7 +31,7 @@ export default function ADCS() {
           </div>
           <div className={styles.card}>
             <Image
-              src={"/public/sunsensor.png"}
+              src="/sunsensor.png"
               width={500}
               height={500}
               alt="Picture of Sun Sensor Testing Rig"
@@ -39,7 +39,7 @@ export default function ADCS() {
           </div>
           <div className={styles.card}>
             <Image
-              src={"/public/sunsensor.png"}
+              src="/sunsensor.png"
               width={500}
               height={500}
               alt="Picture of Sun Sensor Testing Rig"
