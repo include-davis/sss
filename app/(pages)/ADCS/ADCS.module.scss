@@ -1,37 +1,92 @@
-.TopContent{
+.TopContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 
-.TopContent h1
-{
+.TopContent h1 {
   align-self: stretch;
   font-size: 3rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
-// replace with classname
-.TopContent p
-{
+.TopContent p {
   font-family: "Space Grotesk";
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  color: --var(--black);
+  color: var(--black); /* fixed typo */
   align-self: stretch;
 }
 
-.Group
-{
+.ImageContainer {
   display: flex;
   padding: 0.625rem 3.125rem;
   align-items: center;
   gap: 1.25rem;
   align-self: stretch;
-
 }
+
+.ImageCarousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.ImageCarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.Group {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll 15s linear infinite; /* fixed typo + smoother speed */
+}
+
+
+.CardWrapper
+{
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.Card {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  border-radius: 0.75rem 0.75rem 0 0;
+  overflow: hidden;
+}
+
+
+.captionContainer {
+  width: 100%;
+  display: flex;
+  height: 3.875rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+}
+
+.caption {
+  color: white;
+  font-size: 0.9rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
