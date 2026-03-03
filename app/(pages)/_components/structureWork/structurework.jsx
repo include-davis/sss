@@ -25,7 +25,7 @@ export default function StructureWork() {
           </p>
         </div>
         
-        <div className={styles.carsouelWrapper}>
+        <div className={styles.carouselWrapper}>
           <div className={styles.projectGrid}>
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
