@@ -1,6 +1,7 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
 .PastMissions {
   background-color: var(--off-white);
-  padding: 0 6.25rem;
 }
 
 .container {
@@ -8,6 +9,13 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+  padding-left: 6.25rem;
+
+  @include mixins.phone{
+    padding-left: 2.5rem;
+    width: 22.0625rem;
+    gap: 1.5rem;
+  }
 }
 
 .header {
@@ -16,11 +24,20 @@
   gap: 0.625rem;
   align-self: stretch;
 
+  @include mixins.phone{
+    justify-content: center;
+  }
+
   h1 {
     font-family: Oxanium;
     font-size: 3rem;
     font-weight: 500;
     line-height: normal;
+
+    @include mixins.phone{
+      text-align: center;
+      font-size: 2rem;  
+    }
   }
 }
 
@@ -43,6 +60,11 @@
   align-items: flex-start;
   gap: 0.625rem;
   width: max-content;
+
+  @include mixins.phone{
+    gap: 2.5rem;
+    align-self: stretch;
+  }
 }
 
 .projectCard {
@@ -54,6 +76,10 @@
   align-items: flex-start;
   flex-shrink: 0;
 
+  @include mixins.phone{
+    width: 19.1875rem;
+  }
+
   .image {
     img {
     display: block;
@@ -62,6 +88,12 @@
     align-self: stretch;
     border-radius: 0.9375rem 0.9375rem 0 0;
     border: 1px solid var(--midnight);
+
+    @include mixins.phone{
+      height: 12.25rem;
+      width: 19.1875rem;
+      flex-shrink: 0;
+    }
     }
   }
 
@@ -73,13 +105,23 @@
     height: 20.375rem;
     position: relative;
 
+    @include mixins.phone{
+      padding: 1rem 1rem 1.5rem 1rem;
+    }
+
     h2{
       // project title 
       color: var(--off-white);
       font-family: Oxanium;
       font-size: 2.5rem;
       font-weight: 500;
-      margin: 0 0 0.5rem 0;
+      margin-bottom: 0.5rem;
+
+      @include mixins.phone{
+        font-size: 1.75rem;
+        margin-bottom: 0.25rem;
+      }
+
     }
     h3 {
       // sub text
@@ -88,6 +130,12 @@
       font-size: 1rem;
       font-weight: 400;
       margin: 0 0 1rem 0;
+
+      @include mixins.phone{
+        color: var(--off-white);
+        font-size: 1.125rem;
+      }
+      
     }
     h4{
       // body text 
@@ -96,15 +144,20 @@
       font-size: 1.25rem;
       font-weight: 400;
       margin: 0 0 2rem 0;
+
+      @include mixins.phone{
+        color: var(--off-white);
+      }
     }
     button{
       // button
-      padding: 0.63rem;
       border-radius: 0.3125rem;
       background: var(--off-white);
       border-color: var(--off-white);
       box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
       width: 14.0625rem;
+      height: 3.125rem;
+      text-align: center;
 
       // text
       color: var(--gray);
@@ -116,6 +169,13 @@
       &:hover{
         background:var(--off-white) ;
     }
+
+    @include mixins.phone{
+      width: 11.25rem;
+      height: 2.625rem;
+      font-size: 0.875rem;
+    }
   }
   }
 }
+
