@@ -28,32 +28,25 @@ export default function ADCS() {
             components on the satellite.
           </p>
         </div>
-
         <div className={styles.ImageContainer}>
-          <div className={styles.ImageCarousel} style={{ gap: "1.5rem" }}>
-            {[0, 1].map((groupIndex) => (
-              <div
-                key={groupIndex}
-                className={styles.Group}
-                aria-hidden={groupIndex !== 0}
-              >
-                {cards.map((card) => (
-                  <div key={card.label} className={styles.CardWrapper}>
-                    <div className={styles.Card}>
-                      <Image
-                        src={card.src}
-                        alt={card.label}
-                        fill
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
-                    <div className={styles.captionContainer}>
-                      <span className={styles.caption}>{card.label}</span>
-                    </div>
+          <div className={styles.ImageCarousel}>
+            <div className={styles.Group}>
+              {[...cards, ...cards].map((card, i) => (
+                <div key={i} className={styles.CardWrapper}>
+                  <div className={styles.Card}>
+                    <Image
+                      src={card.src}
+                      alt={card.label}
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
-                ))}
-              </div>
-            ))}
+                  <div className={styles.captionContainer}>
+                    <span className={styles.caption}>{card.label}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

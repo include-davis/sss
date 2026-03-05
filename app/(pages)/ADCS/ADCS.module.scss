@@ -19,13 +19,6 @@
   padding: 0rem 1.75rem;
 }
 
-// .TopContent
-// {
-//   display: flex;
-//   align-items: center;
-//   align-self: stretch;
-//   width: 100%;
-// }
 
 .TopContent .ADCSTitle {
   align-self: stretch;
@@ -37,28 +30,17 @@
   font-family: "Space Grotesk";
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--black); /* fixed typo */
+  color: var(--black); 
   align-self: stretch;
 }
 
 .ImageContainer {
   display: flex;
-  // padding: 0.625rem 3.125rem;
   align-items: center;
-  // gap: 1.25rem;
-  // align-self: stretch;
   width: 100%;
-  padding: 0;
+  padding: 0 0 0 1.75rem; // ← left padding only, matches TopContent
 }
 
-// .ImageCarousel {
-//   width: 100%;
-//   max-width: 80rem;
-//   margin: 4rem auto;
-//   overflow: hidden;
-//   display: flex;
-//   gap: 1.5rem;
-// }
 
 .ImageCarousel{
   // width: 100%;
@@ -66,17 +48,24 @@
   display: flex;
   gap: 1.5rem;
   margin: 0;
-  padding: 0rem 1.75rem;
+  padding: 0;
+  width: 100%;
+  &:hover .Group
+  {
+    animation-play-state: paused;
+  }
 }
 
 .ImageCarousel::-webkit-scrollbar {
   display: none;
 }
 
+
 .Group {
   display: flex;
   gap: 1.5rem;
-  animation: scroll 20s linear infinite; 
+  will-change: transform;
+  animation: scroll 10s linear infinite; 
   flex-shrink: 0;
   min-width: max-content;
 }
@@ -123,7 +112,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
