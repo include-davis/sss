@@ -13,7 +13,6 @@
 
   @include mixins.phone{
     padding-left: 2.5rem;
-    width: 22.0625rem;
     gap: 1.5rem;
   }
 }
@@ -23,9 +22,11 @@
   align-items: center;
   gap: 0.625rem;
   align-self: stretch;
+  //padding-left: 6.25rem;
 
   @include mixins.phone{
     justify-content: center;
+    //padding-left: 2.5rem;
   }
 
   h1 {
@@ -132,7 +133,6 @@
       margin: 0 0 1rem 0;
 
       @include mixins.phone{
-        color: var(--off-white);
         font-size: 1.125rem;
       }
       
@@ -144,10 +144,6 @@
       font-size: 1.25rem;
       font-weight: 400;
       margin: 0 0 2rem 0;
-
-      @include mixins.phone{
-        color: var(--off-white);
-      }
     }
     button{
       // button

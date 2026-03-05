@@ -1,10 +1,11 @@
 import styles from "./pastMissions.module.scss"
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PastMissions() {
   const projects = [
-    { title: 'Water Bear', src: '/WaterBear.png', width: 800, height: 445, alt: 'Water Bear', date: 'Project from 2025', mission: 'Mission: Create a prototype Mars rover as a proof of concept to prepare for the University Rover Challenge in 2027.'},
+    { title: 'Water Bear', src: '/WaterBear.png', width: 800, height: 445, alt: 'Water Bear', date: 'Project from 2025', mission: 'Mission: Create a prototype Mars rover as a proof of concept to prepare for the University Rover Challenge in 2027.', learnMore: 'http://google.com/'},
     { title: 'FAR', src: '/FAR.png', width: 800, height: 445, alt: 'FAR', date: 'Project from 2022', mission: 'Mission: Work with RPL at UCSD to test the robustness of a new mechanical structural configuration.'  },
     { title: 'MAPS', src: '/MAPS.png', width: 800, height: 445, alt: 'MAPS', date: 'Project from 2019', mission: 'Mission: Design a cost effective and sustainable 2-story inflatable greenhouse for martian agriculture.' },
     { title: 'QuARCS', src: '/QuARCS.png', width: 800, height: 445, alt: 'QuARCS', date: 'Project from 2018', mission: 'Mission: Observe efficiency of satellite-transceiver/transmitter interactions and Dopper Shift between QuARCS and Iridium.' },
@@ -36,7 +37,7 @@ export default function PastMissions() {
                   <h2>{project.title}</h2>
                   <h3>{project.date}</h3>
                   <h4>{project.mission}</h4>
-                  <button> Learn More </button>
+                  {project.learnMore && ( <Link href={project.learnMore} target="_blank"> <button>Learn More</button> </Link>)}
                 </div>
               </div>
             ))}
