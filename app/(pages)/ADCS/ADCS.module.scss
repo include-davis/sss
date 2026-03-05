@@ -29,10 +29,11 @@
 
 .ImageCarousel {
   width: 100%;
-  max-width: 1200px;
+  max-width: 80rem;
   margin: 4rem auto;
   overflow: hidden;
   display: flex;
+  gap: 1.5rem;
 }
 
 .ImageCarousel::-webkit-scrollbar {
@@ -43,6 +44,7 @@
   display: flex;
   gap: 1.5rem;
   animation: scroll 15s linear infinite; /* fixed typo + smoother speed */
+  flex-shrink: 0;
 }
 
 
