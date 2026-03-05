@@ -7,6 +7,7 @@ import discord from '@/public/Vector.svg'
 export default function HowCanYouJoin(){
     return(
         <div className={styles.container}>
+            <h1 className ={styles.headingMobile}> How can you join?</h1>
             <div className={styles.left}>
                 <Link href="https://discord.com/invite/e4YvMNVe7Q" className={styles.link}>
                     <div className = {styles.imageContainer}>
