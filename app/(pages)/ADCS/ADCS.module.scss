@@ -18,13 +18,21 @@
   width: 100%;
 }
 
-.TopContent h1 {
+// .TopContent
+// {
+//   display: flex;
+//   align-items: center;
+//   align-self: stretch;
+//   width: 100%;
+// }
+
+.TopContent .ADCSTitle {
   align-self: stretch;
   font-size: 3rem;
   font-weight: 500;
 }
 
-.TopContent p {
+.TopContent .MissionDescription {
   font-family: "Space Grotesk";
   font-size: 1.25rem;
   font-weight: 400;
@@ -34,19 +42,29 @@
 
 .ImageContainer {
   display: flex;
-  padding: 0.625rem 3.125rem;
+  // padding: 0.625rem 3.125rem;
   align-items: center;
-  gap: 1.25rem;
-  align-self: stretch;
+  // gap: 1.25rem;
+  // align-self: stretch;
+  width: 100%;
+  padding: 0;
 }
 
-.ImageCarousel {
+// .ImageCarousel {
+//   width: 100%;
+//   max-width: 80rem;
+//   margin: 4rem auto;
+//   overflow: hidden;
+//   display: flex;
+//   gap: 1.5rem;
+// }
+
+.ImageCarousel{
   width: 100%;
-  max-width: 80rem;
-  margin: 4rem auto;
   overflow: hidden;
   display: flex;
   gap: 1.5rem;
+  margin: 0;
 }
 
 .ImageCarousel::-webkit-scrollbar {
@@ -56,8 +74,9 @@
 .Group {
   display: flex;
   gap: 1.5rem;
-  animation: scroll 15s linear infinite; /* fixed typo + smoother speed */
+  animation: scroll 20s linear infinite; 
   flex-shrink: 0;
+  min-width: max-content;
 }
 
 
@@ -70,7 +89,8 @@
 }
 
 .Card {
-  width: 100%;
+  // width: 100;
+  padding: 10.5rem 14.0625rem;
   aspect-ratio: 16/9;
   position: relative;
   border-radius: 0.75rem 0.75rem 0 0;

@@ -15,13 +15,13 @@ export default function ADCS() {
     <div>
       <div className={styles.Page}>
         <div className={styles.TopContent}>
-          <h1>ADCS Work</h1>
-          <p>
+          <h1 className={styles.ADCSTitle}>ADCS Work</h1>
+          <p className={styles.MissionDescription}>
             ADCS is the mission of the satellite itself and represents our
             interdisciplinary team that does work in electrical, structures, and
             software.
           </p>
-          <p>
+          <p className={styles.MissionDescription}>
             They have been hard at working doing HDD testing, creating our
             coils, using sun sensors to figure out satellite orientation, and
             writing algorithms to handle the data and outputs of the various
@@ -35,7 +35,7 @@ export default function ADCS() {
               <div
                 key={groupIndex}
                 className={styles.Group}
-                aria-hidden={groupIndex === 1}
+                aria-hidden={groupIndex !== 0}
               >
                 {cards.map((card) => (
                   <div key={card.label} className={styles.CardWrapper}>
