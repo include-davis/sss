@@ -30,7 +30,7 @@ export default function ADCS() {
         </div>
 
         <div className={styles.ImageContainer}>
-          <div className={styles.ImageCarousel}>
+          <div className={styles.ImageCarousel} style={{ gap: "1.5rem" }}>
             {[0, 1].map((groupIndex) => (
               <div
                 key={groupIndex}
