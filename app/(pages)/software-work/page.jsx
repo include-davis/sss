@@ -62,7 +62,7 @@ export default function SoftwareWork() {
 
         <div className={styles.SVGContainer}>
           <Image 
-          src={"./Vector.svg"}
+          src={"./github.svg"}
           alt="Github Logo"
           height={429}
           width={418}
