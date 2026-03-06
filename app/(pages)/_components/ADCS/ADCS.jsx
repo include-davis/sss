@@ -4,6 +4,7 @@ import sunSensorRig from "@/public/sunsensor.png";
 import coilsRig from "@/public/Testingrig.png";
 import sunSensorSim from "@/public/simulation.png";
 
+// Holds immages + description for continous carosuel
 const cards = [
   { src: sunSensorRig, label: "Sun Sensor Testing Rig" },
   { src: coilsRig, label: "Coils Testing Rig" },
