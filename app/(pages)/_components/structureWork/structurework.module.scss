@@ -1,0 +1,130 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.structureWork {
+  background-color: var(--off-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 4rem;
+
+  @include mixins.phone{
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  padding: 0 6.25rem;
+
+  @include mixins.phone{
+    align-items: center;
+    padding: 0 1.25rem;
+  }
+
+  h1 {
+    font-family: Oxanium;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: normal;
+
+    @include mixins.phone{
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}
+
+.text {
+    align-items: stretch;
+    color: var(--off-black);
+    /* Body */
+    font-family: "Space Grotesk";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+
+    @include mixins.phone{
+      font-size: 1.125rem;
+      //padding: 0 1.25rem;
+    }
+}
+
+@keyframes spin {
+  from { translate: 0; }
+  to { translate: -50%; }
+}
+
+.carouselWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.projectGrid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1.25rem;
+  align-self: stretch;
+  position: relative;
+  animation: spin 30s linear infinite;
+  width: max-content;
+  will-change: transform;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.projectCard {
+  border-radius: 0.9375rem 0.9375rem 0 0;
+
+  .image {
+    img {
+      display: block;
+      width: 28.125rem;
+      height: 21rem;
+      border-radius: 0.9375rem 0.9375rem 0 0;
+
+      @include mixins.phone{
+        width: 16.75rem;
+        height: 12.5rem;
+      }
+    }
+  }
+
+  .cardLabel {
+    display: flex;
+    height: 3.875rem;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    align-self: stretch;
+    border-radius: 0 0 0.9375rem 0.9375rem;
+    background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+
+    @include mixins.phone{
+      height: 3.9375rem;
+    }
+
+    h3 {
+      color: var(--off-white);
+      /* Subtext */
+      font-family: "Space Grotesk";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
