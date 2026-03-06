@@ -81,6 +81,7 @@
   overflow: hidden;
   position: relative;
   padding: 10.5rem 14.0625rem;
+  
   @include mixins.phone {
     padding: 6.25rem 8.375rem;
     flex-shrink: 0;
