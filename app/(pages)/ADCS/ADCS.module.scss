@@ -1,3 +1,5 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
 .Page {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,13 @@
   gap: 2.5rem;
   width: 100%;
   box-sizing: border-box;
+
+
+  @include mixins.phone
+  {
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
 }
 
 .TopContent {
@@ -17,16 +26,24 @@
     font-size: 3rem;
     font-weight: 500;
     align-self: stretch;
-  font-family: Oxanium;
+    font-family: Oxanium;
 
+    @include mixins.phone {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
 
   .MissionDescription {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Space Grotesk";
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--black);
     align-self: stretch;
+
+    @include mixins.phone {
+      font-size: 1.125rem;
+    }
   }
 }
 
@@ -64,16 +81,28 @@
   overflow: hidden;
   position: relative;
   padding: 10.5rem 14.0625rem;
+  @include mixins.phone {
+    padding: 6.25rem 8.375rem;
+    flex-shrink: 0;
+  }
 }
 
 .captionContainer {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: 1.34rem 2rem; 
+  padding: 1.34rem 2rem;
   border-radius: 0 0 0.9375rem 0.9375rem;
   background: linear-gradient(180deg, #000138 0%, #172b54 100%);
   flex-shrink: 0;
   align-self: stretch;
+
+  @include mixins.phone
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .caption {
@@ -84,6 +113,10 @@
 }
 
 @keyframes scroll {
-  from { translate: 0; }
-  to { translate: -50%; }
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -50%;
+  }
 }
