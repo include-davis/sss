@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Image from "next/image"
 import styles from "./software-work.module.scss";
-// import styles from "./mixins.scss"
-
-// import .scss file (use styles)
 
 export default function SoftwareWork() {
   // js code outside of return
@@ -22,6 +19,16 @@ export default function SoftwareWork() {
             Software involves using STM32CubeIDE, looking at datasheets,
             documentation, looking at schematics, and embedded C
           </p>
+          {/*SVG on Mobile*/}
+          <div className={styles.SVGContainerMobile}>
+            <Image
+              src={"./github.svg"}
+              alt="Github Logo"
+              height={429}
+              width={418}
+              style={{width: "100%", height: "auto" }}
+            />
+          </div>
 
           <div className={styles.SSSButtonsContainer}>
             <Link
@@ -57,8 +64,8 @@ export default function SoftwareWork() {
             </Link>
           </div>
         </div>
-
-        <div className={styles.SVGContainer}>
+        {/*Desktop SVG*/}
+        <div className={styles.SVGContainerDesktop}>
           <Image 
           src={"./github.svg"}
           alt="Github Logo"
