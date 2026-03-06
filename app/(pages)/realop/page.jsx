@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import StructureWork from "../_components/structureWork/structurework";
+import StructureWork from "../_components/StructureWork/structurework";
 
 export default function Realop() {
   return (

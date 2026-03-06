@@ -1,5 +1,5 @@
 import styles from "./comeJoinUs.module.scss";
-import GoogleCalendar from "../googleCalendar/googleCalendar";
+import GoogleCalendar from "../GoogleCalendar/googleCalendar";
 
 export default function ComeJoinUs() {
   return (

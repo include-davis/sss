@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import HowCanYouJoin from "../_components/howCanYouJoin/howCanYouJoin";
+import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin";
 
 export default function Join() {
   return (

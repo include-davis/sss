@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import ComeJoinUs from "../_components/comeJoinUs/comeJoinUs";
+import ComeJoinUs from "../_components/ComeJoinUs/comeJoinUs";
 
 export default function Home() {
   return (

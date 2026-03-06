@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import PastMissions from "../_components/pastMissions/pastMissions";
+import PastMissions from "../_components/PastMissions/pastMissions";
 
 export default function Missions() {
   return (
