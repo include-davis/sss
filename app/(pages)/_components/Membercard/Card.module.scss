@@ -1,15 +1,14 @@
 .card{
-    width: 320px;
-    border-radius: 16px;
-    background: var(--off-white);
-    padding: 20px;
+    width: 20rem;
+    border-radius: 1rem;
+   
 }
 .imageContainer{
     width:100%;
-    aspect-ratio: 1/1; 
-    border-radius: 8px;
+    aspect-ratio: 244/251; 
+    border-radius: 0.3125rem;
+    border: 0.09375rem solid var(--space-blue);
     overflow: hidden;
-    border: 2.353px solid var(--space-blue);
    
 }
 .imageContainer img{
@@ -23,33 +22,42 @@
     background: #e6e6e6;
 }
 .info{
-    margin-top:25px;
+    margin-top: 0.5rem;
 }
 .topRow{
     display: flex; 
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.25rem;
 }
 .name{
     font-family:"Space Grotesk";
-    font-size: 1.6rem;
-    color: var(--spaceblue);
-    font-weight: 335;
+    font-size: 1.5rem;
+    color: var(--off-black);
+    font-weight: 400;
+    flex: 1;
+    overflow-wrap: break-word;
 }
 .email{
-    color: var(--light-gray);
+    
     display:flex;
+    align-items: center;
+    justify-content: center;
+    width:1.8125rem;
+    height:1.8125rem;
+    color: var(--light-gray);
+    align-self:flex-start;
 }
 .title{
-    margin: 7px 0 2px;
-    color: var(--spaceblue);
+    margin-top: 0.5rem;
+    color: var(--space-blue);
     font-family:"Space Grotesk";
-    font-size: 1.1rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 400;
 }
 .department{
-     margin: 7px 0 2px;
+    margin-top: 0.25rem;
     color:var(--gray);
     font-family:"Space Grotesk";
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight:400;
 }
