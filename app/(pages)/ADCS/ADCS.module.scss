@@ -16,6 +16,9 @@
   .ADCSTitle {
     font-size: 3rem;
     font-weight: 500;
+    align-self: stretch;
+  font-family: Oxanium;
+
   }
 
   .MissionDescription {
@@ -23,6 +26,7 @@
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--black);
+    align-self: stretch;
   }
 }
 
@@ -52,7 +56,6 @@
 
 .CardWrapper {
   flex: 0 0 auto;
-  width: 30rem;
 }
 
 .Card {
@@ -66,10 +69,11 @@
 .captionContainer {
   display: flex;
   align-items: center;
-  height: 3.875rem;
-  padding: 0 2rem;
+  padding: 1.34rem 2rem; 
   border-radius: 0 0 0.9375rem 0.9375rem;
   background: linear-gradient(180deg, #000138 0%, #172b54 100%);
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
 .caption {
