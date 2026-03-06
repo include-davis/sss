@@ -1,11 +1,8 @@
 
 .pageBody
 {
-  // background: linear-gradient(180deg, #000138 0%, #172B54 100%);
-  background: var(--navy);
+  background: linear-gradient(180deg, var(--midnight) 0%, var(--navy) 100%);
   box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
-  margin: 0;
-  padding: 0;
 }
 
 .content
@@ -32,13 +29,10 @@
 
 .softwareHeader
 {
-  color: #FFF;
+  color: var(--white);
   font-size: 3rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   size: 3rem;
-  position: sticky;  
 }
 
 
@@ -121,8 +115,3 @@
   flex-shrink: 0;
 }
 
-// :root{
-//   --Blue-Gradiant: linear-gradient(180deg, #000138 0%, #172B54 100%);
-//   --Off-White:#F7F7F7;
-//   --Grey: #575757;
-// }
