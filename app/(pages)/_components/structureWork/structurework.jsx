@@ -1,15 +1,51 @@
-import styles from "./structurework.module.scss"
-import React from 'react';
-import Image from 'next/image';
+import styles from "./structurework.module.scss";
+import React from "react";
+import Image from "next/image";
 
 export default function StructureWork() {
   const projects = [
-    { title: 'Partial Assembly', src: '/partial-assembly.png', width: 450, height: 336, alt: 'Partial Assembly' },
-    { title: 'Thermal Analysis', src: '/thermal-analysis.png', width: 450, height: 336, alt: 'Thermal Analysis' },
-    { title: 'Battery Holder', src: '/battery.png', width: 450, height: 336, alt: 'Battery Holder' },
-    { title: 'REALOP I Drawing', src: '/REALOP.png', width: 450, height: 336, alt: 'REALOP I Drawing'},
-    { title: 'Mech Analysis', src: '/MechAnalysis.png', width: 450, height: 336, alt: 'Mech Analysis'},
-    { title: 'Assembly', src: '/assembly.png', width: 450, height: 336, alt: 'Assembly'}
+    {
+      title: "Partial Assembly",
+      src: "/partial-assembly.png",
+      width: 450,
+      height: 336,
+      alt: "Partial Assembly",
+    },
+    {
+      title: "Thermal Analysis",
+      src: "/thermal-analysis.png",
+      width: 450,
+      height: 336,
+      alt: "Thermal Analysis",
+    },
+    {
+      title: "Battery Holder",
+      src: "/battery.png",
+      width: 450,
+      height: 336,
+      alt: "Battery Holder",
+    },
+    {
+      title: "REALOP I Drawing",
+      src: "/REALOP.png",
+      width: 450,
+      height: 336,
+      alt: "REALOP I Drawing",
+    },
+    {
+      title: "Mech Analysis",
+      src: "/MechAnalysis.png",
+      width: 450,
+      height: 336,
+      alt: "Mech Analysis",
+    },
+    {
+      title: "Assembly",
+      src: "/assembly.png",
+      width: 450,
+      height: 336,
+      alt: "Assembly",
+    },
   ];
 
   return (
@@ -18,21 +54,25 @@ export default function StructureWork() {
         <div className={styles.header}>
           <h1>Structure Work</h1>
           <p className={styles.text}>
-            Our Structures team has been working on creating the frame, making sure everything fits in place, and analyzing the satellite for structure and thermal integrity.
+            Our Structures team has been working on creating the frame, making
+            sure everything fits in place, and analyzing the satellite for
+            structure and thermal integrity.
           </p>
           <p className={styles.text}>
-            Work in structures for the satellite includes using Onshape for design, Hand tools and machines for assembly, Ansys Workbench for mechanical, and Thermal Desktop for thermal analysis
+            Work in structures for the satellite includes using Onshape for
+            design, Hand tools and machines for assembly, Ansys Workbench for
+            mechanical, and Thermal Desktop for thermal analysis
           </p>
         </div>
-        
+
         <div className={styles.carouselWrapper}>
           <div className={styles.projectGrid}>
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
                 <div className={styles.image}>
-                  <Image 
-                    src={project.src} 
-                    width={project.width} 
+                  <Image
+                    src={project.src}
+                    width={project.width}
                     height={project.height}
                     alt={project.alt}
                     className={styles.img}
@@ -47,9 +87,9 @@ export default function StructureWork() {
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
                 <div className={styles.image}>
-                  <Image 
-                    src={project.src} 
-                    width={project.width} 
+                  <Image
+                    src={project.src}
+                    width={project.width}
                     height={project.height}
                     alt={project.alt}
                     className={styles.img}

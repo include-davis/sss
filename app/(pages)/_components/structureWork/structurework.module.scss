@@ -10,7 +10,7 @@
   align-items: baseline;
   gap: 4rem;
 
-  @include mixins.phone{
+  @include mixins.phone {
     gap: 1.5rem;
     align-items: flex-start;
   }
@@ -24,7 +24,7 @@
   align-self: stretch;
   padding: 0 6.25rem;
 
-  @include mixins.phone{
+  @include mixins.phone {
     align-items: center;
     padding: 0 1.25rem;
   }
@@ -35,7 +35,7 @@
     font-weight: 500;
     line-height: normal;
 
-    @include mixins.phone{
+    @include mixins.phone {
       text-align: center;
       font-size: 2rem;
     }
@@ -43,30 +43,33 @@
 }
 
 .text {
-    align-items: stretch;
-    color: var(--off-black);
-    /* Body */
-    font-family: "Space Grotesk";
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: normal;
+  align-items: stretch;
+  color: var(--off-black);
+  /* Body */
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
 
-    @include mixins.phone{
-      font-size: 1.125rem;
-      //padding: 0 1.25rem;
-    }
+  @include mixins.phone {
+    font-size: 1.125rem;
+    //padding: 0 1.25rem;
+  }
 }
 
 @keyframes spin {
-  from { translate: 0; }
-  to { translate: -50%; }
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -50%;
+  }
 }
 
 .carouselWrapper {
   width: 100%;
   overflow: hidden;
 }
-
 
 .projectGrid {
   display: flex;
@@ -94,7 +97,7 @@
       height: 21rem;
       border-radius: 0.9375rem 0.9375rem 0 0;
 
-      @include mixins.phone{
+      @include mixins.phone {
         width: 16.75rem;
         height: 12.5rem;
       }
@@ -111,9 +114,12 @@
     gap: 2.5rem;
     align-self: stretch;
     border-radius: 0 0 0.9375rem 0.9375rem;
-    background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+    background: var(
+      --Blue-Gradient,
+      linear-gradient(180deg, #000138 0%, #172b54 100%)
+    );
 
-    @include mixins.phone{
+    @include mixins.phone {
       height: 3.9375rem;
     }
 
@@ -127,4 +133,3 @@
     }
   }
 }
-
