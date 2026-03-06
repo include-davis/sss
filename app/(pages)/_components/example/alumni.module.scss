@@ -1,9 +1,24 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.main{
+    background-color: var(--off-white);
+}
+
+
 .header {
     color: off-black;
     font-size: 3rem;
     font-weight: 500;
     margin-left: 7.61rem;
     margin-bottom: 4.91rem;
+    @include mixins.phone{
+        font-size: 2rem;
+        margin-left:0;
+        width: 18rem;
+        margin:auto;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
 }
 
 
@@ -15,9 +30,12 @@
     overflow-x: auto;
     margin-bottom: 2rem;
     //background-color: grey;
-}
-.carousel::-webkit-scrollbar{
-    display: none
+    &::-webkit-scrollbar{
+        display: none
+    }
+    @include mixins.phone{
+        margin-bottom: 1.2rem;
+    }
 }
 
 .group{
@@ -27,6 +45,11 @@
     gap: 1.88rem;
     animation: spin 30s infinite linear;
     padding-right: 1.88rem;
+    @include mixins.phone{
+        gap: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
     
 }
 
@@ -37,18 +60,24 @@
     gap: 1.88rem;
     animation: spin2 30s infinite linear;
     padding-right: 1.88rem;
+    @include mixins.phone{
+        gap: 0.5rem;
+        padding-right: 0.5rem;
+    }
     
 }
 .box{
-    flex: 0 0 23.6875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 12.875rem;
     width: 23.6875rem;
-    padding:1em;
-    border-radius:  .63rem;
-    font-size: 2rem;
+    border-radius: 0.63rem;
     background: white;
-    text-align: center;
-    align-content: center;
+    @include mixins.phone{
+        width: 7.8rem;
+        height: 4.1rem;
+    }
 
 }
 
@@ -62,6 +91,9 @@
     to {translate: 0;}
 }
 
-.image{
-    display: flex;
+.logo {
+    position: relative;
+    @include mixins.phone {
+        transform: scale(0.33);
+    }
 }
