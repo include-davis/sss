@@ -1,9 +1,5 @@
-import styles from "./example.module.scss"
+import styles from "./example.module.scss";
 
-export default function Example () {
-    return (
-    <>
-
-    </>
-    )
+export default function Example() {
+  return <></>;
 }

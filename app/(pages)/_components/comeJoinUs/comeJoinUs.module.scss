@@ -1,17 +1,17 @@
 @use "@/app/(pages)/_globals/mixins.scss";
 .main {
-    padding: 0 6.25rem;
+  padding: 0 6.25rem;
+  @include mixins.phone {
+    padding: 0 1.25rem;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
     @include mixins.phone {
-        padding: 0 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
     }
-    .title { 
-        font-size: 3rem;
-        font-weight: 500;
-        margin-bottom: 2rem;
-        @include mixins.phone {
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            text-align: center;
-        }
-    }
+  }
 }
