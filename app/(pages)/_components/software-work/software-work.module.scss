@@ -18,7 +18,7 @@
   gap: 3rem;
   padding: 4rem 6rem;
   // makes the page flex items align with window size (let me know to remove this)
-  max-width: 90rem;
+  // max-width: 90rem;
 
   @include mixins.phone
   {
