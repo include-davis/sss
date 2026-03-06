@@ -5,6 +5,7 @@
   --off-white: #f7f7f7;
   --midnight: #000138;
   --space-blue: #172b54;
+  --white: #ffffff;
 }
 
 * {
@@ -12,3 +13,5 @@
   padding: 0;
   margin: 0;
 }
+
+button { all: unset; }
