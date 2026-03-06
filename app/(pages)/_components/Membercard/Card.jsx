@@ -11,11 +11,7 @@ export default function Membercard({
     return (
         <div className={styles.card}>
             <div className={styles.imageContainer}>
-                {image ? (
-                    <img src={image} alt={name}/>
-                ) : (
-                    <div className={styles.placeholder}/>
-                )}
+                    <img src={image || "images/avatar-placeholder.svg"} alt={name}/>
             </div>
 
             <div className={styles.info}>
