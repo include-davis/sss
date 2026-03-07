@@ -1,6 +1,6 @@
 import Teamgroup from "../_components/Teamgroup/Teamgroup";
 
-const leadership =[
+const Advisors =[
     {
         name: "Rich Whittle",
         title: "Assistant Professor",
@@ -27,7 +27,7 @@ const leadership =[
 export default function page(){
     return(
         <div>
-            <Teamgroup title ="Leadership" members={leadership}/>
+            <Teamgroup title ="Advisors" members={Advisors}/>
         </div>
     )
 }
