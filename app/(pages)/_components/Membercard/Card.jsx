@@ -10,7 +10,7 @@ export default function Membercard({
 }) {
     return (
         <div className={styles.card}>
-            <div className={styles.imageContainer}>
+            <div className={styles.image}>
                     <img src={image || "images/avatar-placeholder.svg"} alt={name}/>
             </div>
 

@@ -2,7 +2,7 @@
     width: 15.625rem;
    
 }
-.imageContainer{
+.image{
     width:100%;
     aspect-ratio: 244/251; 
     border-radius: 0.3125rem;
@@ -10,7 +10,7 @@
     overflow: hidden;
    
 }
-.imageContainer img{
+.image img{
     width: 100%;
     height:100%;
     object-fit: cover;
