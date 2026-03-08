@@ -1,21 +1,28 @@
 @use '@/app/(pages)/_globals/mixins.scss';
 
 .container{
+    width: 77.5rem;
+    margin: 0 auto;
+    
+    //align-self: stretch;
+}
+
+.childrenContainer{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     gap:3.5rem;
     align-self: stretch;
 }
-
 .title{
-    align-self: stretch;
+    //remove align self property
     font-family: 'Oxanium';
     font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     color: var(--Space-Blue, #172B54);
+    margin: 0;
 }
 
 .benefitForSponsor{
@@ -23,12 +30,16 @@
     color: black;
     font-family: 'Space Grotesk';
     font-size: 1.25rem;
-    font-style: normal;
+    //font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    //line-height: normal;
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
 }
 
-.benfitContainer{
+.benefitContainer{
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -57,7 +68,8 @@
     align-items: center;
     gap: 0.625rem;
     border-radius: 0.4375rem;
-    background-color: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+    background-color: #172b54;
+    background: linear-gradient(180deg, #000138 0%, #172B54 100%);
 
 }
 
@@ -68,6 +80,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
+    margin:0;
 }
 
 .Benefitamount{
@@ -79,6 +92,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin:0;
 }
 
 .SponsorPacket{
@@ -117,6 +131,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 0;
 }
 
 .SponsorLearnMore{
@@ -126,4 +141,5 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin: 0;
 }
