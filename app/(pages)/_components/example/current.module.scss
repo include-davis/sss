@@ -1,13 +1,23 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
 .container {
-  display: flex;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 6.25rem;
   padding: 2.5rem 3.125rem;
   border-radius: 0.9375rem;
   border: 1.5px solid var(--Blue-Gradient, #000138);
-  //background: #FFF;
   /* Drop Shadow */
   box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+  @include mixins.phone{
+    grid-template-columns: 1fr;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    border: 0.5px solid var(--Blue-Gradient, #000138);
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.04);
+    
+  }
 }
 
 .textColumn {
@@ -20,50 +30,69 @@
   padding-top: 1.68rem;
   padding-bottom: 1.68rem;
   border-radius: 8px;
+  @include mixins.phone{
+    gap: 0.5rem;
+    padding: 0rem;
+    justify-content: center;
+    align-items:center;
+  }
 }
 
 .imageColumn {
   order: 1; /* Image comes first in grid order */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.phone{
+    justify-content: normal;
+    align-items:normal;
+    padding-bottom: 1rem;
+  }
 }
+
 .imageColumn img {
-  height: 25.60325rem; 
-  width: 29.625rem;
-  border-radius: 0.3965rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
+
 
 .imageColumn2 {
   order: 1; /* Image comes first in grid order */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.phone{
+    justify-content: normal;
+    align-items:normal;
+    padding-bottom: 1rem;
+  }
 }
+
 .imageColumn2 img {
-  height: 31.625rem; 
-  width: 29.875rem;
-  border-radius: 0.4375rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .imageColumn3 {
   order: 1; /* Image comes first in grid order */
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include mixins.phone{
+    justify-content: normal;
+    align-items:normal;
+    padding-bottom: 1rem;
+  }
 }
 .imageColumn3 img {
-  height: 27.75rem; 
-  width: 29.625rem;
-  border-radius: 0.4375rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
+
 
 .a{
   text-decoration: none;
 }
 
 .button{
-  text-decoration: none;
   margin-top: 1.5rem;
   display: flex;
   width: 14.0625rem;
@@ -80,67 +109,75 @@
   color: var(--Off-White, #F7F7F7);
   font-family: "Space Grotesk";
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   cursor: pointer;
   transition: color 0.4s linear;
+  @include mixins.phone{
+    margin-top: 0.75rem;
+    width: 11.25rem;
+    height: 2.625rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    
+  }
 }
 .button:hover{
   background-color:#172B54;
 }
 
 .norm_text{
-  align-self: stretch;
   color: var(--Off-Black, #2B2B2B);
   /* Body */
   font-family: "Space Grotesk";
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-top: 1rem;
+  @include mixins.phone{
+    padding-bottom: 0.5rem;
+  }
 }
 .main_title{
-  align-self: stretch;
-  color: #000;
-  /* Header 1 */
-  font-family: Oxanium;
+
   font-size: 3rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   margin-bottom: 2rem;
+  @include mixins.phone{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    //color: #000;
+    text-align: center;
+    /* Header 1 (Mobile) */
+    font-family: Oxanium;
+    font-size: 2rem;
+    
+  }
 }
 .main{
   padding: 6.25rem;
+  @include mixins.phone{
+    padding: 1.25rem;
+  }
 }
 
 .second_title{
-  align-self: stretch;
   color: var(--Space-Blue, #172B54);
   /* Header 3 */
-  font-family: Oxanium;
   font-size: 2rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  @include mixins.phone{
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items:center;
+  }
 }
 
 .small_text{
-  align-self: stretch;
   color: var(--Grey, #575757);
-  /* Subtext */
-  font-family: "Space Grotesk";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  //margin-bottom: 0.5rem;
+  
 }
 .block{
   display: block;
   margin-top: 1rem;
+  
 }
 
 .p {
