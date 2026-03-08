@@ -5,17 +5,17 @@
     max-width: 90rem;
     //height: 35.375rem;
     margin: 0 auto;
-    padding: 6.25rem;
+    padding: 6.25rem  6.25rem ;
     align-items: flex-start;
     gap: 0.625rem;
-    background: url('/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
+    background: url('/Frame 1618873348.png');
     //keep this as background
 
 }
 
 .textPictureContainer{
     display: flex;
-    height: 23.3125rem;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 4.6875rem;
@@ -23,16 +23,26 @@
     //not necessary align-self: stretch;
 }
 
+.textContainer{
+    display: flex;
+    width: 41.5625rem;
+    height: 14.1875rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    //for title and texts
+}
+
 .SponsorUsTitle {
-    align-self: stretch;
+    //align-self: stretch;
     color: white;
     text-align: center;
-    font-family: 'Oxanium';
+    font-family: 'Oxanium',sans-serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin:0;
+    margin:0 0 1rem 0;
 }
 
 .benefit{
@@ -41,21 +51,24 @@
     padding:0;
     margin:0;
     align-self: stretch;
-    background: var(--Off-White, #F7F7F7);
+    padding-left: 1.25rem;
+    color: var(--Off-White, #F7F7F7);
     font-family: "Space Grotesk";
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin:0.75rem;
+    margin-bottom: 0;
 }
 
 .picture{
     width: 31rem;
     height: 23.1875rem;
-    padding-top: 74.8%; 
+    //padding-top: 74.8%; 
     border-radius: 0.9375rem;
 
-    //background: url('/Mask-group_1.png') lightgray -43.509px -37.68px / 116.959% 122.266% no-repeat;
+    //background: url('/Mask-group_1.png');
 
 
 }
