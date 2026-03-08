@@ -1,8 +1,9 @@
 @use "@/app/(pages)/_globals/mixins.scss";
 .main {
-  padding: 0 6.25rem;
+  padding: 9.25rem 6.25rem;
+  background-color: var(--off-white);
   @include mixins.phone {
-    padding: 0 1.25rem;
+    padding: 6.25rem 1.25rem;
   }
   .title {
     font-size: 3rem;

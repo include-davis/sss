@@ -15,7 +15,8 @@ export default function Home() {
       <WhoAreWe
         heading="Who are we?"
         paragraphs={paragraphs}
-        imageSrc="/whoweare.png"
+        imageSrc="/whoarewe.png"
+        imageAlt="who are we"
       />
       <ComeJoinUs />
     </main>
