@@ -1,5 +1,5 @@
 import "./_globals/globals.scss";
-import { Oxanium, Space_Grotesk} from "next/font/google";
+import { Oxanium, Space_Grotesk } from "next/font/google";
 
 export const metadata = {
   title: "Space and Satellite Systems",
@@ -13,7 +13,9 @@ const oxanium = Oxanium();
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} ${oxanium.className}`}>{children}</body>
+      <body className={`${spaceGrotesk.className} ${oxanium.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
