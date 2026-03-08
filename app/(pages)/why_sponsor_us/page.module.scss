@@ -1,23 +1,21 @@
 @use '@/app/(pages)/_globals/mixins.scss';
 
 .container {
-    display: flex;
     //width: 90rem;
     max-width: 90rem;
     //height: 35.375rem;
-    margin: auto;
+    margin: 0 auto;
     padding: 6.25rem;
-    flex-direction: column;
     align-items: flex-start;
     gap: 0.625rem;
-    background: url('/public/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
+    background: url('/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
     //keep this as background
 
 }
 
 .textPictureContainer{
     display: flex;
-    //height: 23.3125rem;
+    height: 23.3125rem;
     justify-content: center;
     align-items: center;
     gap: 4.6875rem;
@@ -34,11 +32,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin:0;
 }
 
 .benefit{
-    height: 8.0625rem;
+    //height: 8.0625rem;
     flex-shrink: 0;
+    padding:0;
+    margin:0;
     align-self: stretch;
     background: var(--Off-White, #F7F7F7);
     font-family: "Space Grotesk";
@@ -53,7 +54,8 @@
     height: 23.1875rem;
     padding-top: 74.8%; 
     border-radius: 0.9375rem;
-    //background: url('/public/Frame 1618873348.png') lightgray -43.509px -37.68px / 116.959% 122.266% no-repeat;
+
+    //background: url('/Mask-group_1.png') lightgray -43.509px -37.68px / 116.959% 122.266% no-repeat;
 
 
 }

@@ -1,12 +1,12 @@
 import styles from './page.module.scss';
+import Image from 'next/image';
 
 export default function Whysponsorus(){
     return(
         <div className={styles.container}>
             <div className={styles.textPictureContainer}>
             {/*use this if path to image don't work <Image src="/public/Mask-group 1.png" alt="Team Picture" className={styles.picture} ></Image>*/}
-            <Image src="/public/Mask-group 1.png" alt="Team Picture" className={styles.picture} ></Image>
-            {/*<Image alt="Team Picture" className={styles.picture}/>*/}
+            <Image src='/Mask-group_1.png' alt="Team Picture" className={styles.picture} ></Image>
             <h1 className={styles.SponsorUsTitle}>Why should you sponsor us?</h1>
             <ul className={styles.benefit}>
                 <li>Tax Benefits for a charitable donation</li>
