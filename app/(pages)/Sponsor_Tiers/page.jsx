@@ -45,9 +45,9 @@ export default function sponsortiers(){
                 <p className={styles.SponsorLearnMore}>
                 Learn more through our Sponsor Packet or email us!
                 </p>
-                <button className={styles.SponsorPacketButton}>
-                    <p className={styles.SponosorPacketStyle}>Sponsor Packet</p>
-                </button>
+                <a href="https://www.spacesystemsclub.org/_files/ugd/f86cee_85751d3b7a5a4da8b381fa0181e633bd.pdf" className={styles.SponsorPacketButton}>
+                    <span className={styles.SponosorPacketStyle}>Sponsor Packet</span>
+                </a>
             </div>
         </div>
     </div>
