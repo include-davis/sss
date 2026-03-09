@@ -1,16 +1,33 @@
-import Mission from "../_components/mission/mission";
+import Navbar from "../../_components/Navbar/Nav.jsx";
+export default function Page() {
+    return (
+      <main>
+        <Navbar
+        logoSrc="/favicon.png"
+        logoAlt="Space and Satellite Systems"
+        pages={[
+          { label: "Home", href: "/" },
+          { label: "Missions", href: "/missions" },
+          { label: "Teams", href: "/teams" },
+          { label: "Sponsor Us", href: "/sponsor" },
+          { label: "Join Us", href: "/join" },
+        ]}
+        />
+      </main>
+    );
+  }
+import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin.jsx";
+import StructureWork from "../_components/StructureWork/structurework.jsx";
+import PastMissions from "../_components/PastMissions/pastMissions.jsx";
 
-export default function Test() {
+// leave this page and all conflicts on here shouldn't really matter, we'll delete this when all prs are merged
+
+export default function Home() {
   return (
     <main>
-      <Mission
-        title="Mission"
-        subtitle="Investigate a low cost alternative to traditional reaction wheels."
-        paragraphs={[
-          "The goal is to break down some of the financial barriers that keep teams from experimentation via CubeSats. In following our core belief to prioritize the education of our members, almost all components are designed from scratch, avoiding COTS parts when possible.",
-          "Realop 1 is SSS's first cubesat with the mission of testing computer hard disk drives as a low cost alternative to reaction wheels."
-        ]}
-      />
+      <HowCanYouJoin />
+      <StructureWork />
+      <PastMissions />
     </main>
   );
 }
