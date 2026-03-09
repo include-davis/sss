@@ -3,10 +3,7 @@ import Image from "next/image"
 import styles from "./software-work.module.scss";
 
 export default function SoftwareWork() {
-  // js code outside of return
-
   return (
-    // put html stuff inside div
     <div className={styles.pageBody}>
       <div className={styles.content}>
         <div className={styles.LeftContainer}>
@@ -20,15 +17,13 @@ export default function SoftwareWork() {
             documentation, looking at schematics, and embedded C
           </p>
           {/*SVG on Mobile*/}
-          <div className={styles.SVGContainerMobile}>
             <Image
               src={"./github.svg"}
               alt="Github Logo"
-              height={429}
-              width={418}
-              style={{width: "100%", height: "auto" }}
+              height={221}
+              width={226}
+              className={styles.logoMobile}
             />
-          </div>
 
           <div className={styles.SSSButtonsContainer}>
             <Link
@@ -65,14 +60,13 @@ export default function SoftwareWork() {
           </div>
         </div>
         {/*Desktop SVG*/}
-        <div className={styles.SVGContainerDesktop}>
           <Image 
           src={"./github.svg"}
           alt="Github Logo"
           height={429}
           width={418}
-          ></Image>
-        </div>
+          className={styles.logoDesktop}
+          />
       </div>
     </div>
   );
