@@ -4,12 +4,23 @@
     //width: 90rem;
     max-width: 90rem;
     //height: 35.375rem;
-    margin: 0 auto;
-    padding: 6.25rem  6.25rem ;
+    margin:  auto;
+    padding: 6.25rem 6.25rem 6.25rem 6.25rem ;
     align-items: flex-start;
     gap: 0.625rem;
-    background: url('/Frame 1618873348.png');
+    background: url('/public/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
     //keep this as background
+
+    @include mixins.tablet{
+        padding: 4rem 3rem 0 3rem;
+        margin:auto;
+    }
+
+    @include mixins.phone {
+        padding: 1.5rem 1.25rem;
+        background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+        margin:auto;
+    }
 
 }
 
@@ -21,6 +32,16 @@
     gap: 4.6875rem;
     //flex-shrink: 0;
     //not necessary align-self: stretch;
+
+    @include mixins.tablet {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    @include mixins.phone{
+        width:100%;
+        gap:1.5rem;
+    }
 }
 
 .textContainer{
@@ -31,6 +52,15 @@
     align-items: center;
     gap: 2rem;
     //for title and texts
+    
+    @include mixins.tablet{
+        width: 100%;
+        height: auto;
+    }
+
+    @include mixins.phone{
+        gap:1.5rem;
+    }
 }
 
 .SponsorUsTitle {
@@ -43,6 +73,10 @@
     font-weight: 500;
     line-height: normal;
     margin:0 0 1rem 0;
+
+    @include mixins.phone{
+        font-size: 2rem;
+    }
 }
 
 .benefit{
@@ -60,6 +94,11 @@
     line-height: normal;
     margin:0.75rem;
     margin-bottom: 0;
+
+    @include mixins.phone{
+        font-size: 1.125rem;
+        padding-left: 1rem;
+    }
 }
 
 .picture{
@@ -69,7 +108,13 @@
     border-radius: 0.9375rem;
 
     //background: url('/Mask-group_1.png');
-
+    @include mixins.phone {
+        width: 100%;
+        height: auto;
+        //aspect-ratio: 167 / 125;                  
+        border-radius: 0.625rem;     
+    }
+    
 
 }
 
