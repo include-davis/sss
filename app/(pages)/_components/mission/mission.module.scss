@@ -1,0 +1,81 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.container {
+  display: flex;
+  padding: 5.5625rem 5.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.inner {
+  display: flex;
+  width: 78.125rem;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header {
+  display: flex;
+  padding: 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.title {
+  color: var(--off-white);
+  font-family: "Oxanium";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.divider {
+  width: 0.0625rem;
+  height: 16.3175rem;
+  flex-shrink: 0;
+  background: var(--off-white);
+}
+
+.content {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+
+.textBlock {
+  display: flex;
+  max-width: 59.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.subtitle {
+  align-self: stretch;
+  color: var(--off-white);
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body {
+  align-self: stretch;
+  color: var(--off-white);
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
