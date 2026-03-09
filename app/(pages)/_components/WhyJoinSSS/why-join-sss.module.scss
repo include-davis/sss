@@ -1,0 +1,75 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.section {
+  position: relative;
+  display: flex;
+  padding: 6.25rem;
+  align-items: flex-start;
+  overflow: hidden;
+  background-image: url("/bg-blue-stars.svg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  @include mixins.phone {
+    padding: 1.25rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.75rem;
+    @include mixins.phone {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .textGroup {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      @include mixins.phone {
+        order: 2;
+        gap: 1rem;
+      }
+    }
+
+    .heading {
+      align-self: stretch;
+      color: var(--off-white);
+      font-family: Oxanium;
+      font-size: 3rem;
+      font-weight: 500;
+      @include mixins.phone {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+    .paragraphs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      align-self: stretch;
+
+      .paragraph {
+        color: var(--off-white);
+        font-family: "Space Grotesk";
+        font-size: 1.25rem;
+        @include mixins.phone {
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    .image {
+      @include mixins.phone {
+        order: 1;
+        height: 264px;
+        width: 353px;
+      }
+    }
+  }
+}
