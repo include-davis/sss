@@ -1,13 +1,33 @@
-import WhyJoinSSS from "../_components/why-join-sss/why-join-sss"
+import Navbar from "../../_components/Navbar/Nav.jsx";
+export default function Page() {
+    return (
+      <main>
+        <Navbar
+        logoSrc="/favicon.png"
+        logoAlt="Space and Satellite Systems"
+        pages={[
+          { label: "Home", href: "/" },
+          { label: "Missions", href: "/missions" },
+          { label: "Teams", href: "/teams" },
+          { label: "Sponsor Us", href: "/sponsor" },
+          { label: "Join Us", href: "/join" },
+        ]}
+        />
+      </main>
+    );
+  }
+import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin.jsx";
+import StructureWork from "../_components/StructureWork/structurework.jsx";
+import PastMissions from "../_components/PastMissions/pastMissions.jsx";
 
-export default function TestPage() {
+// leave this page and all conflicts on here shouldn't really matter, we'll delete this when all prs are merged
+
+export default function Home() {
   return (
     <main>
-      <WhyJoinSSS
-        heading="Why join SSS?"
-        paragraph1="Join a community and network who truly enjoy engineering and making things!"
-        paragraph2="We make it a priority to make sure all members have the opportunity to have meaningful contributions to the project and learn industry relevant skills. We always have plenty to do!"
-      />
+      <HowCanYouJoin />
+      <StructureWork />
+      <PastMissions />
     </main>
   );
 }
