@@ -5,6 +5,13 @@
     margin: 0 auto;
     
     //align-self: stretch;
+    @include mixins.tablet{
+        padding:2rem;
+    }
+    @include mixins.phone{
+        width:22.065rem;
+        padding:0;
+    }
 }
 
 .childrenContainer{
@@ -13,6 +20,14 @@
     align-items: flex-start;
     gap:3.5rem;
     align-self: stretch;
+
+    @include mixins.tablet{
+        gap: 2.5rem;
+    }
+    @include mixins.phone{
+        align-items: center;
+        gap:1.5rem;
+    }
 }
 .title{
     //remove align self property
@@ -23,6 +38,12 @@
     line-height: normal;
     color: var(--Space-Blue, #172B54);
     margin: 0;
+
+    @include mixins.phone{
+        font-size:2rem;
+        text-align: center;
+        align-self: stretch;
+    }
 }
 
 .benefitForSponsor{
@@ -35,8 +56,14 @@
     //line-height: normal;
     margin: 0;
     padding-left: 1.25rem;
-    list-style-type: disc;
     margin-bottom: 0.5rem;
+
+    @include mixins.phone{
+        padding-left: 1.25rem;
+        width: 100%;
+        font-size: 1.125rem;
+
+    }
 }
 
 .benefitContainer{
@@ -44,6 +71,12 @@
     align-items: center;
     gap: 5rem;
     align-self: stretch;
+
+    @include mixins.phone{
+        flex-direction: column;
+        align-self: stretch;
+        gap:1rem;
+    }
 }
 
 .benefitSponsorContainer{
@@ -56,6 +89,11 @@
     border-radius: 0.9375rem;
     background: white;
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
+
+    @include mixins.phone{
+        padding: 1rem;
+        width:100%;
+    }
 }
 
 .BenefitLevelContainer{
@@ -71,6 +109,11 @@
     background-color: #172b54;
     background: linear-gradient(180deg, #000138 0%, #172B54 100%);
 
+    @include mixins.phone{
+        width: 100%;
+        padding: 1.25rem 1rem;
+    }
+
 }
 
 .BenefitLevel{
@@ -81,6 +124,10 @@
     font-weight: 500;
     line-height: normal; 
     margin:0;
+
+    @include mixins.phone{
+        font-size: 1.125rem;
+    }
 }
 
 .Benefitamount{
@@ -93,6 +140,10 @@
     font-weight: 400;
     line-height: normal;
     margin:0;
+    @include mixins.phone{
+        font-size: 0.875rem;
+    }
+
 }
 
 .SponsorPacket{
@@ -101,6 +152,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+
+    @include mixins.phone{
+        align-items: center;
+        gap:0.75rem;
+    }
 }
 
 .SponsorPacketButton{
@@ -122,6 +178,10 @@
         cursor: pointer;  
     }
 
+    @include mixins.phone{
+        padding:0.5rem;
+    }
+
 }
 
 .SponosorPacketStyle{
@@ -132,6 +192,10 @@
     font-weight: 500;
     line-height: normal;
     margin: 0;
+
+    @include mixins.phone{
+        font-size: 0.875rem;
+    }
 }
 
 .SponsorLearnMore{
@@ -142,4 +206,10 @@
     font-weight: 300;
     line-height: normal;
     margin: 0;
+
+    @include mixins.phone{
+        font-size: 0.875rem;
+        text-align: center;
+        align-self: stretch;
+    }
 }
