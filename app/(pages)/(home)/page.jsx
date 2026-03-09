@@ -1,6 +1,7 @@
 import styles from "./page.module.scss";
 import ComeJoinUs from "../_components/ComeJoinUs/comeJoinUs";
 import WhoAreWe from "../_components/WhoAreWe/who-are-we";
+import WhatWereUpTo from "../_components/WhatWereUpTo/whatWereUpTo";
 
 export default function Home() {
   const paragraphs = [
@@ -18,6 +19,7 @@ export default function Home() {
         imageSrc="/whoarewe.png"
         imageAlt="who are we"
       />
+      <WhatWereUpTo />
       <ComeJoinUs />
     </main>
   );
