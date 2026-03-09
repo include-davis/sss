@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.className} ${oxanium.className}`}>
-        <Navbar/>   
+        <Navbar />
         {children}
         <Footer />
       </body>

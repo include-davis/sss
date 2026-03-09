@@ -91,15 +91,8 @@
 
 .right {
   display: flex;
-  width: 53.875rem;
   flex-direction: column;
-  align-items: flex-start;
   gap: 2rem;
-  flex-shrink: 0;
-
-  @include mixins.phone {
-    width: 100%;
-  }
 }
 
 .heading {

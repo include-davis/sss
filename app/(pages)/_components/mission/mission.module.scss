@@ -7,9 +7,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  background: linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%);
+  background-image: url("/bg-blue-stars.svg");
+  background-size: cover;
+  background-position: center;
+
   @include mixins.phone {
-    padding: 2rem 1.25rem
+    padding: 2rem 1.25rem;
   }
 
   .inner {
@@ -17,16 +20,16 @@
     flex-direction: row;
     align-items: center;
     gap: 5rem;
-    @include mixins.phone{
+    @include mixins.phone {
       flex-direction: column;
       gap: 1.5rem;
     }
-  
+
     .header {
       display: flex;
       align-items: flex-start;
       gap: 0.625rem;
-    
+
       .title {
         color: var(--off-white);
         font-family: "Oxanium";
@@ -38,7 +41,7 @@
         }
       }
     }
-    
+
     .divider {
       width: 0.0625rem;
       height: 16.3175rem;
@@ -50,26 +53,26 @@
         height: 0.0625rem;
       }
     }
-    
+
     .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 0.625rem;
-    
+
       .textBlock {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        
+
         .subtitle {
           color: var(--off-white);
           font-family: "Space Grotesk";
           font-size: 1.25rem;
           font-weight: 500;
         }
-    
+
         .paragraph {
           color: var(--off-white);
           font-family: "Space Grotesk";

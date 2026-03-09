@@ -68,11 +68,11 @@ export default function PastMissions() {
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
                 <Image
-                    src={project.src}
-                    width={project.width}
-                    height={project.height}
-                    alt={project.alt}
-                    className={styles.image}
+                  src={project.src}
+                  width={project.width}
+                  height={project.height}
+                  alt={project.alt}
+                  className={styles.image}
                 />
 
                 <div className={styles.cardLabel}>

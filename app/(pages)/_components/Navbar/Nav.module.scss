@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 6.25rem;
-  flex-direction: row; 
+  flex-direction: row;
   background-color: var(--white);
   @include mixins.phone {
     flex-direction: column;
@@ -31,7 +31,6 @@
     @include mixins.phone {
       display: block;
     }
-
   }
 
   .logo {
@@ -41,7 +40,7 @@
       height: 4.2rem;
     }
   }
-  
+
   .pages {
     display: flex;
     gap: 2.5rem;
@@ -52,10 +51,10 @@
       gap: 2rem;
       padding: 5rem 0;
     }
-  
+
     a {
       font-family: "Space Grotesk";
-      color: var(--off-black);        
+      color: var(--off-black);
       font-size: 1.25rem;
       font-weight: 500;
       cursor: pointer;
@@ -70,7 +69,7 @@
         font-weight: 400;
       }
     }
-  }  
+  }
 
   .pages.open {
     display: flex;

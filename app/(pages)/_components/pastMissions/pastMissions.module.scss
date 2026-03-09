@@ -66,18 +66,17 @@
   }
 
   .image {
-      display: block;
-      height: 15.625rem;
-      width: 28.125rem;
-      align-self: stretch;
-      border-radius: 0.9375rem 0.9375rem 0 0;
-      border: 1px solid var(--midnight);
+    display: block;
+    height: 15.625rem;
+    width: 28.125rem;
+    align-self: stretch;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    border: 1px solid var(--midnight);
 
-      @include mixins.phone {
-        height: 12.25rem;
-        width: 19.1875rem;
-      }
-
+    @include mixins.phone {
+      height: 12.25rem;
+      width: 19.1875rem;
+    }
   }
 
   .cardLabel {
@@ -146,7 +145,7 @@
 
       @include mixins.phone {
         padding: 0.75rem 3.25rem;
-        font-size: 0.875rem;  
+        font-size: 0.875rem;
       }
     }
   }

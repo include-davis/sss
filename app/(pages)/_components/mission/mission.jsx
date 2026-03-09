@@ -12,7 +12,9 @@ export default function Mission({ title, subtitle, paragraphs }) {
           <div className={styles.textBlock}>
             <p className={styles.subtitle}>{subtitle}</p>
             {paragraphs.map((text, i) => (
-              <p key={i} className={styles.paragraph}>{text}</p>
+              <p key={i} className={styles.paragraph}>
+                {text}
+              </p>
             ))}
           </div>
         </div>

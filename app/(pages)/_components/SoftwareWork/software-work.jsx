@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 import styles from "./software-work.module.scss";
 
 export default function SoftwareWork() {
@@ -17,13 +17,13 @@ export default function SoftwareWork() {
             documentation, looking at schematics, and embedded C
           </p>
           {/*SVG on Mobile*/}
-            <Image
-              src={"./github.svg"}
-              alt="Github Logo"
-              height={221}
-              width={226}
-              className={styles.logoMobile}
-            />
+          <Image
+            src={"./github.svg"}
+            alt="Github Logo"
+            height={221}
+            width={226}
+            className={styles.logoMobile}
+          />
 
           <div className={styles.SSSButtonsContainer}>
             <Link
@@ -60,13 +60,13 @@ export default function SoftwareWork() {
           </div>
         </div>
         {/*Desktop SVG*/}
-          <Image 
+        <Image
           src={"./github.svg"}
           alt="Github Logo"
           height={429}
           width={418}
           className={styles.logoDesktop}
-          />
+        />
       </div>
     </div>
   );
