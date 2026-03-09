@@ -7,21 +7,24 @@ export default function WhatWereUpTo() {
       date: "Summer 2026",
       mission: "Investigate a low cost alternative to traditional reaction wheels",
       buttonText: "Learn More",
-      img: "/REALOPI.png"
+      img: "/REALOPI.png",
+      link: ""
     },
     {
       title: "URC",
       date: "Winter 2027",
       mission: "Create a Mars Rover to compete in the 2027 University Rover Challenge",
       buttonText: "Launching Soon",
-      img: "/URC.png"
+      img: "/URC.png",
+      link: ""
     },
     {
       title: "UAS",
       date: "ongoing project",
       mission: "Create Unmanned Aerial Systems for URC and help train the ROTC",
       buttonText: "Launching Soon",
-      img: "/UAS.png"
+      img: "/UAS.png",
+      link: ""
     }
   ];
 
@@ -39,8 +42,9 @@ export default function WhatWereUpTo() {
               <h2 className={styles.projectTitle}>{project.title}</h2>
               <p className={styles.launchDate}>Launch Date: {project.date}</p>
               <p className={styles.missionText}>Mission: {project.mission}</p>
-              <a href={project.type === 'dynamic' ? "#" : undefined} 
-              className={`${styles.button} ${styles[project.type]}`}>
+              <a href={project.link} 
+              className={`${styles.button} ${styles[project.type]}`}
+              >
                 {project.buttonText}
               </a>
             </div>
