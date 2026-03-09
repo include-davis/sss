@@ -16,9 +16,9 @@ export default function Page() {
       </main>
     );
   }
-import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin";
-import StructureWork from "../_components/StructureWork/structurework";
-import PastMissions from "../_components/PastMissions/pastMissions";
+import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin.jsx";
+import StructureWork from "../_components/StructureWork/structurework.jsx";
+import PastMissions from "../_components/PastMissions/pastMissions.jsx";
 
 // leave this page and all conflicts on here shouldn't really matter, we'll delete this when all prs are merged
 
