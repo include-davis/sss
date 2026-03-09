@@ -2,6 +2,7 @@ import styles from "./page.module.scss";
 import StructureWork from "../_components/StructureWork/structurework";
 import SoftwareWork from "../_components/SoftwareWork/software-work";
 import Mission from "../_components/Mission/mission";
+import ADCS from "../_components/ADCS/ADCS";
 
 export default function Realop() {
   return (
@@ -17,6 +18,7 @@ export default function Realop() {
       />
       <StructureWork />
       <SoftwareWork />
+      <ADCS/>
     </main>
   );
 }
