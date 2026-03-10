@@ -1,0 +1,77 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 6.25rem;
+  flex-direction: row;
+  background-color: var(--white);
+  @include mixins.phone {
+    flex-direction: column;
+    align-items: normal;
+    padding: 0;
+  }
+
+  .mobileTop {
+    display: flex;
+    box-sizing: content-box;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+  }
+
+  .mobileTop.open {
+    border-bottom: solid 1px var(--light-gray);
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    @include mixins.phone {
+      display: block;
+    }
+  }
+
+  .logo {
+    cursor: pointer;
+    @include mixins.phone {
+      width: 4.2rem;
+      height: 4.2rem;
+    }
+  }
+
+  .pages {
+    display: flex;
+    gap: 2.5rem;
+    @include mixins.phone {
+      flex-direction: column;
+      align-self: center;
+      display: none;
+      gap: 2rem;
+      padding: 5rem 0;
+    }
+
+    a {
+      font-family: "Space Grotesk";
+      color: var(--off-black);
+      font-size: 1.25rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.15s;
+      text-align: center;
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include mixins.phone {
+        font-size: 1.125rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .pages.open {
+    display: flex;
+  }
+}
