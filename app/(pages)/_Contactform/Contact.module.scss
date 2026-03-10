@@ -1,0 +1,72 @@
+.container{
+    width: 100%;
+    max-width:1000px;
+    margin: 6rem auto;
+    padding: 3rem;
+}
+
+.title{
+    font-family: Oxanium; 
+    color: var(--Navy);
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+.row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem; 
+  }
+
+.field{
+    display: flex;
+    flex-direction: column; 
+    gap: 0.4rem;
+    
+}
+
+.field label {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 1rem; 
+    border-radius: 0.6rem; 
+    border: 1px solid var(--light-gray);
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--light-gray);
+    font-size: 0.8rem;
+    font-weight:200;
+  }
+
+  .form textarea{
+    min-height: 140px;
+    resize: vertical;
+  }
+
+
+.submit{
+    align-self: flex-end;
+    padding: 0.7rem 2.2rem;
+    border-radius: 0.6rem;
+    border: 0.5px solid var(--light-gray);
+    background: rgba(87,87, 87, 0.80); 
+    color: white; 
+    margin-top: 1.2rem;
+    cursor: pointer;
+    
+
+}
