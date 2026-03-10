@@ -1,0 +1,118 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  padding: 9.25rem 0;
+  padding-left: 3.75rem;
+  gap: 5.25rem;
+  @include mixins.phone {
+    padding: 6.25rem 0;
+    gap: 2rem;
+  }
+}
+
+.TopContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 2.5rem;
+  @include mixins.phone {
+    padding: 0 1.25rem;
+  }
+
+  .ADCSTitle {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: Oxanium;
+
+    @include mixins.phone {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+
+  .MissionDescription {
+    font-family: "Space Grotesk";
+    font-size: 1.25rem;
+    color: var(--black);
+
+    @include mixins.phone {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.ImageContainer {
+  padding-left: 1.75rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ImageCarousel {
+
+  display: flex;
+
+
+  &:hover .Group {
+    animation-play-state: paused;
+  }
+}
+
+.Group {
+  display: flex;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  min-width: max-content;
+  will-change: transform;
+  animation: scroll 30s linear infinite;
+}
+
+.CardWrapper {
+  flex: 0 0 auto;
+}
+
+.Card {
+  position: relative;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  overflow: hidden;
+  position: relative;
+  padding: 10.5rem 14.0625rem;
+  
+  @include mixins.phone {
+    padding: 6.25rem 8.375rem;
+    flex-shrink: 0;
+  }
+}
+
+.captionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.34rem 2rem;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: linear-gradient(180deg, #000138 0%, #172b54 100%);
+
+  @include mixins.phone
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.caption {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Space Grotesk";
+}
+
+@keyframes scroll {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -50%;
+  }
+}
