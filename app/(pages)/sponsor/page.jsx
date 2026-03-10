@@ -1,9 +1,14 @@
+import Hero from "../_components/Hero/Hero";
 import styles from "./page.module.scss";
 
 export default function Sponsor() {
   return (
     <main>
-      <h1 className={styles.test}>Sponsor Us</h1>
+      <Hero textContent={<HeroText />} imageSrc="/missions_hero_graphic.svg" />
     </main>
   );
+}
+
+function HeroText() {
+  return <h1 className={styles.heroText}>Sponsor Us</h1>;
 }
