@@ -1,0 +1,30 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.hero {
+  padding: 120px 100px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include mixins.phone {
+    flex-direction: column-reverse;
+    padding: 64px 20px;
+  }
+}
+
+.textContainer {
+  flex: 2;
+}
+
+.imageContainer {
+  height: 360px;
+  flex: 1;
+  position: relative;
+
+  @include mixins.phone {
+    flex: none;
+    height: 140px;
+    width: 100%;
+  }
+}
+
