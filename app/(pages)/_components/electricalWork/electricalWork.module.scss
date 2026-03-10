@@ -1,0 +1,100 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.section{
+  padding: 0 6.25rem;
+
+  @include mixins.phone{
+    padding: 0 1.25rem; 
+  }
+}
+
+.sectionTitle {
+  color: var(--off-black);
+  font-family: Oxanium, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  @include mixins.phone{
+    color: var(--space-blue);  
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.sectionDescription {
+  color: var(--off-black);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
+
+  @include mixins.phone {
+  font-size: 1.125rem;
+  font-weight: 400;
+  }
+}
+
+.carousel {
+  width: 100%;
+  overflow: visible;
+  margin-bottom: 2rem;
+}
+
+.carouselTrackWrapper {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carouselTrack {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+  padding-right: 1.25rem;
+}
+
+.card {
+  flex: 0 0 30rem;
+  min-width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cardImage {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardCaption {
+  padding: 1.25rem 2rem;
+  background: var(--Blue-Gradient, linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%));
+  color: var(--off-white);
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+
+  @include mixins.phone{
+    padding: 2rem;
+    gap: 2.5rem;
+
+    font-size: 1.5rem;
+  
+  }
+}
