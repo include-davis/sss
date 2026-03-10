@@ -18,6 +18,7 @@ function HeroContent() {
         height={55}
         width={62}
         className={styles.firstStar}
+        alt="stars"
       />
       <h1>Meet the Teams</h1>
       <Image
@@ -25,12 +26,14 @@ function HeroContent() {
         height={55}
         width={62}
         className={styles.desktopSecond}
+        alt="stars"
       />
       <Image
         src="/hero/singlestar-graphic.svg"
         height={31}
         width={31}
         className={styles.mobileSecond}
+        alt="star"
       />
     </div>
   );
