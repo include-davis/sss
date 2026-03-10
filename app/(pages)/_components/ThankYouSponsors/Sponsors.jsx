@@ -8,8 +8,8 @@ export default function Sponsors() {
             name: "Voyager I",
             amount: "$10,000+",
             sponsors: [
-                { name:"UC Davis Give Day", img: ""}, 
-                { name: "Forged Gold ROTC, UC Davis", img: "" },
+                { name:"UC Davis Give Day", img: "/giveday.svg", width: 413, height: 146}, 
+                { name: "Forged Gold ROTC, UC Davis", img: "/forgedgold.svg", width: 135, height: 130 },
             ]
         },
         { name: "Juno", amount: "$5,000+", sponsors: [] },
@@ -52,7 +52,7 @@ export default function Sponsors() {
                         tier.sponsors.map((sponsor, j) => (
                             <div key={j}>
                                 {sponsor.img ? ( // if sponsor has logo/img, show it, else, show name 
-                                    <Image src={sponsor.img} alt={sponsor.name} width={150} height={80} />
+                                    <Image src={sponsor.img} alt={sponsor.name} width={sponsor.width} height={sponsor.height}/>
                                 ) : (
                                     <p> {sponsor.name} </p>
                                 )}

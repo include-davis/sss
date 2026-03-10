@@ -1,0 +1,65 @@
+.sponsorContainer {
+    padding: 2rem 4rem;
+    background: var(--off-white);
+}
+
+.sponsorContainer h2 {
+    font-weight: normal;
+    font-size: 3rem;
+    color: var(--off-black);
+    margin-bottom: 2rem;
+}
+
+.sponsorCard {
+    display: flex; 
+    align-items: center;
+    gap: 4rem; 
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    height: 12rem;
+    width: 100%;
+    font-family: "Space Grotesk";
+}
+
+.sponsorTier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--midnight), var(--space-blue));
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 11rem;
+    height: 9rem;
+    gap:.5rem;
+    
+}
+
+.tierName {
+    color: var(--white);
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.tierAmount {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.sponsorList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    max-width: 40rem;
+}
+
+.sponsorList p {
+    width: 10rem;
+}
+
+.landingSoon {
+    color: var(--light-gray);
+}
