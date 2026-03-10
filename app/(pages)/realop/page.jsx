@@ -3,7 +3,7 @@ import StructureWork from "../_components/StructureWork/structurework";
 import SoftwareWork from "../_components/SoftwareWork/software-work";
 import Mission from "../_components/Mission/mission";
 import ADCS from "../_components/ADCS/ADCS";
-import ElectricalWork from "../_components/electricalWork/electricalWork";
+import ElectricalWork from "../_components/ElectricalWork/electricalWork";
 
 export default function Realop() {
   return (
@@ -20,7 +20,7 @@ export default function Realop() {
       <ElectricalWork />
       <StructureWork />
       <SoftwareWork />
-      <ADCS/>
+      <ADCS />
     </main>
   );
 }

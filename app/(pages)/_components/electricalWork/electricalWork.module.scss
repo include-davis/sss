@@ -1,12 +1,12 @@
 @use "@/app/(pages)/_globals/mixins.scss";
 
-.section{
+.section {
   padding: 10rem 0;
   background-color: var(--off-white);
   overflow: hidden;
 
-  @include mixins.phone{
-    padding: 6.5rem 0; 
+  @include mixins.phone {
+    padding: 6.5rem 0;
   }
 }
 
@@ -24,8 +24,8 @@
   font-weight: 500;
   margin-bottom: 1rem;
 
-  @include mixins.phone{
-    color: var(--space-blue);  
+  @include mixins.phone {
+    color: var(--space-blue);
     font-size: 2rem;
     text-align: center;
   }
@@ -38,8 +38,8 @@
   margin-bottom: 4rem;
 
   @include mixins.phone {
-  font-size: 1.125rem;
-  font-weight: 400;
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 }
 
@@ -90,17 +90,19 @@
   }
 
   .cardCaption {
-    background: var(--Blue-Gradient, linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%));
+    background: var(
+      --Blue-Gradient,
+      linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%)
+    );
     color: var(--off-white);
     padding: 2rem;
     font-family: "Space Grotesk", sans-serif;
     font-size: 1rem;
-  
-    @include mixins.phone{
+
+    @include mixins.phone {
       padding: 1.4rem 0;
       padding-left: 2rem;
       font-size: 1rem;
     }
   }
-  
 }
