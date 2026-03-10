@@ -15,13 +15,15 @@ export default function ElectricalWork() {
 
 return (
     <section className={styles.section}>
-      <h2 className={styles.sectionTitle}>Electrical Work</h2>
-      <p className={styles.sectionDescription}>
-        Our Electrical Department has been hard at work these past few years to
-        create many custom PCBs for the satellite. The work involved includes
-        using KiCad for design, soldering and assembly for PCBs, and rigorous
-        testing
-      </p>
+      <div className={styles.topText}>
+        <h2 className={styles.sectionTitle}>Electrical Work</h2>
+        <p className={styles.sectionDescription}>
+          Our Electrical Department has been hard at work these past few years to
+          create many custom PCBs for the satellite. The work involved includes
+          using KiCad for design, soldering and assembly for PCBs, and rigorous
+          testing
+        </p>
+      </div>
       <div className={styles.carousel}>
         <div className={styles.carouselTrackWrapper}>
           <div className={styles.carouselTrack}>
