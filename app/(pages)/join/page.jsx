@@ -1,11 +1,13 @@
 import styles from "./page.module.scss";
 import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin";
 import WhyJoinSSS from "../_components/WhyJoinSSS/why-join-sss";
+import Hero from "../_components/Hero/Hero";
+import Image from "next/image";
 
 export default function Join() {
   return (
     <main>
-      <h1 className={styles.test}>Join Us</h1>
+      <Hero textContent={<HeroText />} imageContent={<HeroImage />} />
       <WhyJoinSSS
         heading="Why join SSS?"
         paragraph1="Join a community and network who truly enjoy engineering and making things!"
@@ -14,4 +16,12 @@ export default function Join() {
       <HowCanYouJoin />
     </main>
   );
+}
+
+function HeroText() {
+  return <h1 className={styles.heroText}>Join Us</h1>;
+}
+
+function HeroImage() {
+  return <Image src="/join_hero_graphic.svg" fill />;
 }
