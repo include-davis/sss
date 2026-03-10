@@ -2,6 +2,8 @@ import styles from "./page.module.scss";
 import StructureWork from "../_components/StructureWork/structurework";
 import SoftwareWork from "../_components/SoftwareWork/software-work";
 import Mission from "../_components/Mission/mission";
+import ADCS from "../_components/ADCS/ADCS";
+import ElectricalWork from "../_components/ElectricalWork/electricalWork";
 
 export default function Realop() {
   return (
@@ -15,8 +17,10 @@ export default function Realop() {
           "Realop 1 is SSS's first cubesat with the mission of testing computer hard disk drives as a low cost alternative to reaction wheels.",
         ]}
       />
+      <ElectricalWork />
       <StructureWork />
       <SoftwareWork />
+      <ADCS />
     </main>
   );
 }
