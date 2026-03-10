@@ -13,7 +13,11 @@ export default function Home() {
 
   return (
     <main>
-      <Hero textContent={<HeroText />} imageSrc="/home_hero_graphic.svg" />
+      <Hero
+        textContent={<HeroText />}
+        imageSrc="/home_hero_graphic.svg"
+        imageAlt="Hero graphic"
+      />
       <WhoAreWe
         heading="Who are we?"
         paragraphs={paragraphs}
@@ -28,7 +32,7 @@ export default function Home() {
 
 function HeroText() {
   return (
-    <div className={styles.heroText}>
+    <div>
       <h1>Space and Satellite Systems</h1>
       <h2>at UC Davis</h2>
     </div>

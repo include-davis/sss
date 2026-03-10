@@ -5,12 +5,12 @@ import Hero from "../_components/Hero/Hero";
 export default function Missions() {
   return (
     <main>
-      <Hero textContent={<HeroText />} imageSrc="/missions_hero_graphic.svg" />
+      <Hero
+        textContent={<h1>Missions</h1>}
+        imageSrc="/missions_hero_graphic.svg"
+        imageAlt="Hero graphic"
+      />
       <PastMissions />
     </main>
   );
-}
-
-function HeroText() {
-  return <h1 className={styles.heroText}>Missions</h1>;
 }
