@@ -3,7 +3,6 @@ import ComeJoinUs from "../_components/ComeJoinUs/comeJoinUs";
 import WhoAreWe from "../_components/WhoAreWe/who-are-we";
 import WhatWereUpTo from "../_components/WhatWereUpTo/whatWereUpTo";
 import Hero from "../_components/Hero/Hero";
-import Image from "next/image";
 
 export default function Home() {
   const paragraphs = [
@@ -14,7 +13,7 @@ export default function Home() {
 
   return (
     <main>
-      <Hero textContent={<HeroText/>} imageContent={<HeroImage/>}/>
+      <Hero textContent={<HeroText />} imageSrc="/home_hero_graphic.svg" />
       <WhoAreWe
         heading="Who are we?"
         paragraphs={paragraphs}
@@ -34,8 +33,4 @@ function HeroText() {
       <h2>at UC Davis</h2>
     </div>
   );
-}
-
-function HeroImage() {
-  return <Image src="/home_hero_graphic.svg" fill/>
 }
