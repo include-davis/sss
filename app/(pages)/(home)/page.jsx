@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <Hero
         textContent={<HeroText />}
-        imageSrc="/home_hero_graphic.svg"
+        imageSrc="/hero/home-graphic.svg"
         imageAlt="Hero graphic"
       />
       <WhoAreWe
