@@ -2,6 +2,7 @@ import styles from "./page.module.scss";
 import ComeJoinUs from "../_components/ComeJoinUs/comeJoinUs";
 import WhoAreWe from "../_components/WhoAreWe/who-are-we";
 import WhatWereUpTo from "../_components/WhatWereUpTo/whatWereUpTo";
+import Hero from "../_components/Hero/Hero";
 
 export default function Home() {
   const paragraphs = [
@@ -12,7 +13,11 @@ export default function Home() {
 
   return (
     <main>
-      <h1 className={styles.test}>Home</h1>
+      <Hero
+        textContent={<HeroText />}
+        imageSrc="/home_hero_graphic.svg"
+        imageAlt="Hero graphic"
+      />
       <WhoAreWe
         heading="Who are we?"
         paragraphs={paragraphs}
@@ -22,5 +27,14 @@ export default function Home() {
       <WhatWereUpTo />
       <ComeJoinUs />
     </main>
+  );
+}
+
+function HeroText() {
+  return (
+    <div>
+      <h1>Space and Satellite Systems</h1>
+      <h2>at UC Davis</h2>
+    </div>
   );
 }

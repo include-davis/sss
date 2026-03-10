@@ -1,10 +1,15 @@
+import Hero from "../_components/Hero/Hero";
 import styles from "./page.module.scss";
 import ContactForm from "../_components/ContactForm/Contact";
 
 export default function Sponsor() {
   return (
     <main>
-      <h1 className={styles.test}>Sponsor Us</h1>
+      <Hero
+        textContent={<h1>Sponsor Us</h1>}
+        imageSrc="/missions_hero_graphic.svg"
+        imageAlt="Hero graphic"
+      />
       <ContactForm />
     </main>
   );
