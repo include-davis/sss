@@ -12,6 +12,7 @@
   @include mixins.phone {
     flex-direction: column-reverse;
     padding: 4rem 1.25rem;
+    height: unset;
   }
 }
 
@@ -31,6 +32,12 @@
     font-size: 2rem;
     font-weight: 500;
     font-family: "Oxanium";
+  }
+
+  @include mixins.phone {
+    position: unset;
+    align-self: center;
+    text-align: center;
   }
 }
 
