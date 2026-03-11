@@ -10,6 +10,7 @@
     "format": "prettier --write '**/*.{js,jsx,json,scss}'"
   },
   "dependencies": {
+    "lucide-react": "^0.575.0",
     "next": "^16.1.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",

@@ -1,0 +1,17 @@
+.group{
+    width:100%;
+    margin-bottom: 4rem;
+}
+.title{
+    font-family: "Oxanium", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--space-blue);
+    margin-bottom: 2rem;
+}
+.grid{
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem; 
+    flex-wrap: wrap;
+}
