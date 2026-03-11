@@ -2,7 +2,7 @@ import styles from "./Card.module.scss";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 
-export default function Membercard({
+export default function MemberCard({
     name,
     title,
     department,
@@ -11,14 +11,13 @@ export default function Membercard({
 }) {
     return (
         <div className={styles.card}>
-                    <Image
-                    className={styles.image}
-                    src={image || "/images/avatar-placeholder.svg"} 
-                    alt={name}
-                    width={244}
-                    height={251}/>
+            <Image
+            className={image ? styles.image : styles.placeholder}
+            src={image || "/images/avatar-placeholder.svg"} 
+            alt={name}
+            width={250}
+            height={257}/>
             
-
             <div className={styles.info}>
                 <div className={styles.topRow}>
                     <h3 className={styles.name}>{name}</h3>

@@ -17,7 +17,7 @@ export default function Realop() {
         className={styles.firstStar}
         alt="stars"
       />
-      <h1>Meet the Teams</h1>
+      <h1>Realop I</h1>
       <Image
         src="/hero/doublestars-graphic.png"
         height={55}

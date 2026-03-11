@@ -1,4 +1,4 @@
-import Teamgroup from "../_components/Teamgroup/Teamgroup";
+import Teamgroup from "../_components/TeamGroup/Teamgroup";
 
 const Advisors =[
     {

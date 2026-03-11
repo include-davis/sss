@@ -1,23 +1,39 @@
 @use "@/app/(pages)/_globals/mixins.scss";
 
+.test {
+  font-family: "Space Grotesk";
+}
+
 .heroContent {
+  background-color: var(--off-white);
+  height: 39rem;
+  padding-left: 5rem;
   h1 {
     font-size: 3.5rem;
     font-weight: 500;
     font-family: "Oxanium";
     color: var(--midnight);
+    @include mixins.phone {
+      margin-right: 3.75rem;
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 
   display: flex;
-  height: 10rem;
   align-items: center;
 
   .firstStar {
-    align-self: flex-end;
+    margin-top: 5rem;
+    @include mixins.phone {
+      display: inline;
+      align-self: flex-end;
+      margin-right: 3.75rem;
+    }
   }
 
   .desktopSecond {
-    align-self: flex-start;
+    margin-bottom: 5rem;
   }
 
   .mobileSecond {
@@ -28,6 +44,8 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    height: 22.5rem;
+    padding-left: 4rem;
 
     .firstStar {
       margin-left: 1.75rem;
