@@ -2,26 +2,22 @@
 
 .container {
     padding: 6.25rem;
-    align-items: flex-start;
+
     background: url('/public/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
-    //keep this as background
+    overflow: hidden;
 
     @include mixins.phone {
         padding: 1.5rem 1.25rem;
-        background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));    
-        margin:auto;
+        background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
     }
 
 }
 
 .textPictureContainer{
     display: flex;
-    height: 100%;
-    justify-content: center;
     align-items: center;
     gap: 4.6875rem;
-    //flex-shrink: 0;
-    //not necessary align-self: stretch;
+
 
     @include mixins.phone{
         flex-direction: column;
@@ -32,14 +28,12 @@
 
 .textContainer{
     display: flex;
-    width: 41.5625rem;
-    height: 14.1875rem;
+
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 
     @include mixins.phone{
-        gap: 1.5rem;
     }
 }
 

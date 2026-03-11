@@ -1,4 +1,4 @@
-import styles from './page.module.scss';
+import styles from './sponsortiers.module.scss';
 
 
 const reward_list = [
@@ -20,7 +20,7 @@ const reward_list = [
     "Donor name listed on SSS website"]}
     
 ];
-export default function sponsortiers(){
+export default function SponsorTiers(){
     return(
     <div className={styles.container}>
         <div className={styles.childrenContainer}>

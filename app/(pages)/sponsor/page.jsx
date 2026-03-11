@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import ContactForm from "../_components/ContactForm/Contact";
 import WhyJoinSSS from "../_components/WhyJoinSSS/why-join-sss";
 import WhySponsorUs from "../_components/WhySponsorUs/whysponsorus";
+import SponsorTiers from "../_components/SponsorTiers/sponsortiers";
 
 export default function Sponsor() {
   return (
@@ -13,6 +14,7 @@ export default function Sponsor() {
         imageAlt="Hero graphic"
       />
       <WhySponsorUs/>
+      <SponsorTiers/>
       <ContactForm />
     </main>
   );

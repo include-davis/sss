@@ -8,6 +8,7 @@
   gap: 2rem;
   background-color: var(--off-white);
   position: relative;
+  overflow: hidden;
 
   @include mixins.phone {
     flex-direction: column-reverse;
