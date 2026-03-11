@@ -1,14 +1,13 @@
 .sponsorContainer {
-    padding: 2rem 4rem 12rem;
+    padding: 0 6.25rem;
+    padding-bottom: 12.5rem;
     background: var(--off-white);
-    
-}
 
-.sponsorContainer h2 {
-    font-weight: normal;
-    font-size: 3rem;
-    color: var(--off-black);
-    margin-bottom: 2rem;
+    h2 {
+        font-weight: 500;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .sponsorCard {
@@ -55,10 +54,10 @@
     gap: 5rem;
     align-items: center;
     max-width: 40rem;
-}
 
-.sponsorList p {
-    width: 10rem;
+    p {
+        width: 10rem;
+    }
 }
 
 .landingSoon {
