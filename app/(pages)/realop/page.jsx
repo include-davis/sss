@@ -4,11 +4,35 @@ import SoftwareWork from "../_components/SoftwareWork/software-work";
 import Mission from "../_components/Mission/mission";
 import ADCS from "../_components/ADCS/ADCS";
 import ElectricalWork from "../_components/ElectricalWork/electricalWork";
+import Image from "next/image";
 
 export default function Realop() {
   return (
     <main>
-      <h1 className={styles.test}>Realop I</h1>
+      <div className={styles.heroContent}>
+      <Image
+        src="/hero/doublestars-graphic.png"
+        height={55}
+        width={62}
+        className={styles.firstStar}
+        alt="stars"
+      />
+      <h1>Meet the Teams</h1>
+      <Image
+        src="/hero/doublestars-graphic.png"
+        height={55}
+        width={62}
+        className={styles.desktopSecond}
+        alt="stars"
+      />
+      <Image
+        src="/hero/singlestar-graphic.svg"
+        height={31}
+        width={31}
+        className={styles.mobileSecond}
+        alt="star"
+      />
+    </div>
       <Mission
         title="Mission"
         subtitle="Investigate a low cost alternative to traditional reaction wheels."

@@ -1,3 +1,61 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
 .test {
   font-family: "Space Grotesk";
+}
+
+.heroContent {
+  background-color: var(--off-white);
+  height: 39rem;
+  padding-left: 5rem;
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Oxanium";
+    color: var(--midnight);
+    @include mixins.phone {
+      margin-right: 3.75rem;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+
+  .firstStar {
+    margin-top: 5rem;
+    @include mixins.phone {
+      display: inline;
+      align-self: flex-end;
+      margin-right: 3.75rem;
+    }
+  }
+
+  .desktopSecond {
+    margin-bottom: 5rem;
+  }
+
+  .mobileSecond {
+    display: none;
+  }
+
+  @include mixins.phone {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 22.5rem;
+
+    .firstStar {
+      margin-left: 1.75rem;
+    }
+
+    .desktopSecond {
+      display: none;
+    }
+
+    .mobileSecond {
+      display: inline;
+      align-self: flex-start;
+      margin-right: 1.75rem;
+    }
+  }
 }

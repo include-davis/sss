@@ -8,7 +8,7 @@ export default function Join() {
     <main>
       <Hero
         textContent={<h1>Join Us</h1>}
-        imageSrc="/join_hero_graphic.svg"
+        imageSrc="/hero/joinus-graphic.svg"
         imageAlt="Hero graphic"
       />
       <WhyJoinSSS

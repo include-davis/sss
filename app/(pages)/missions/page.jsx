@@ -7,7 +7,7 @@ export default function Missions() {
     <main>
       <Hero
         textContent={<h1>Missions</h1>}
-        imageSrc="/missions_hero_graphic.svg"
+        imageSrc="/hero/missions-graphic.svg"
         imageAlt="Hero graphic"
       />
       <PastMissions />

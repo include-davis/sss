@@ -7,7 +7,7 @@ export default function Sponsor() {
     <main>
       <Hero
         textContent={<h1>Sponsor Us</h1>}
-        imageSrc="/sponsor_hero_graphic.svg"
+        imageSrc="/hero/sponsorus-graphic.svg"
         imageAlt="Hero graphic"
       />
       <ContactForm />
