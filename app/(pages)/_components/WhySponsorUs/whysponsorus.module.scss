@@ -1,24 +1,14 @@
 @use '@/app/(pages)/_globals/mixins.scss';
 
 .container {
-    //width: 90rem;
-    max-width: 90rem;
-    //height: 35.375rem;
-    margin:  auto;
-    padding: 6.25rem 6.25rem 6.25rem 6.25rem ;
+    padding: 6.25rem;
     align-items: flex-start;
-    gap: 0.625rem;
     background: url('/public/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
     //keep this as background
 
-    @include mixins.tablet{
-        padding: 4rem 3rem 0 3rem;
-        margin:auto;
-    }
-
     @include mixins.phone {
         padding: 1.5rem 1.25rem;
-        background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));
+        background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));    
         margin:auto;
     }
 
@@ -33,12 +23,8 @@
     //flex-shrink: 0;
     //not necessary align-self: stretch;
 
-    @include mixins.tablet {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
     @include mixins.phone{
+        flex-direction: column;
         width:100%;
         gap:1.5rem;
     }
@@ -51,15 +37,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    //for title and texts
-    
-    @include mixins.tablet{
-        width: 100%;
-        height: auto;
-    }
 
     @include mixins.phone{
-        gap:1.5rem;
+        gap: 1.5rem;
     }
 }
 
@@ -109,9 +89,8 @@
 
     //background: url('/Mask-group_1.png');
     @include mixins.phone {
-        width: 100%;
-        height: auto;
-        //aspect-ratio: 167 / 125;                  
+        width: 22rem;
+        height: 16.5rem;
         border-radius: 0.625rem;     
     }
     

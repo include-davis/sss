@@ -1,7 +1,7 @@
-import styles from './page.module.scss';
+import styles from './whysponsorus.module.scss';
 import Image from 'next/image';
 
-export default function Whysponsorus(){
+export default function WhySponsorUs(){
     return(
         <div className={styles.container}>
             <div className={styles.textPictureContainer}>
