@@ -1,0 +1,132 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.pageBody {
+  background: var(
+    --Blue-Gradient,
+    linear-gradient(180deg, #000138 0%, #172b54 100%)
+  );
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 6.25rem;
+  padding-top: 5.5rem;
+  padding-bottom: 8.75rem;
+  // makes the page flex items align with window size (let me know to remove this)
+  // max-width: 90rem;
+
+  @include mixins.phone {
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    align-items: center;
+  }
+}
+
+// puts the header, description, and buttons to the left
+.LeftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+
+  @include mixins.phone {
+    align-items: center;
+  }
+}
+
+.softwareHeader {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 500;
+  // size: 3rem;
+  @include mixins.phone {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.softwareDescription {
+  font-size: 1.25rem;
+  font-family: "Space Grotesk";
+  color: var(--off-white);
+  max-width: 45rem;
+  @include mixins.phone {
+    font-size: 1.125rem;
+  }
+}
+
+.SSSButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.SSSButton {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  border: 0.5px solid var(--off-white);
+  background: rgba(247, 247, 247, 0.9);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+  color: var(--gray);
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  width: 20rem; // Allows the buttons to be even-sized horizontally no matter how long text is
+  cursor: pointer;
+  text-decoration: none;
+
+  @include mixins.phone {
+    width: 11.25rem;
+    padding: 0.75rem 0;
+    min-width: unset;
+    font-size: 0.875rem;
+  }
+}
+.SSSButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.17);
+  transform-origin: 0% 50%;
+  transform: scaleX(0); // slide is off
+  transition: transform 0.3s ease;
+}
+.SSSButton:hover::before {
+  animation: slideOverlay 0.3s forwards;
+}
+
+@keyframes slideOverlay {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1); // slide is on
+  }
+}
+// ^^used to for translation smoothly
+
+.logoDesktop {
+  margin-right: 12%;
+  @include mixins.phone {
+    display: none;
+  }
+}
+
+.logoMobile {
+  display: none;
+  @include mixins.phone {
+    margin: 3rem 0;
+    display: flex;
+  }
+}

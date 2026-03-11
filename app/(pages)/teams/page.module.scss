@@ -1,0 +1,46 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.heroContent {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Oxanium";
+    color: var(--midnight);
+  }
+
+  display: flex;
+  height: 10rem;
+  align-items: center;
+
+  .firstStar {
+    align-self: flex-end;
+  }
+
+  .desktopSecond {
+    align-self: flex-start;
+  }
+
+  .mobileSecond {
+    display: none;
+  }
+
+  @include mixins.phone {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .firstStar {
+      margin-left: 1.75rem;
+    }
+
+    .desktopSecond {
+      display: none;
+    }
+
+    .mobileSecond {
+      display: inline;
+      align-self: flex-start;
+      margin-right: 1.75rem;
+    }
+  }
+}

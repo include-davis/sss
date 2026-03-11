@@ -1,0 +1,124 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.main {
+  padding: 2.5rem 9.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13%;
+
+  @include mixins.phone {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 3.5rem;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    @include mixins.phone {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--off-black);
+    margin-top: 2rem;
+    font-family: "Space Grotesk";
+    text-align: center;
+  }
+
+  .subtitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 0.75rem;
+    margin-bottom: 2.5rem;
+    @include mixins.phone {
+      margin-bottom: 3rem;
+    }
+
+    .line {
+      height: 0.125rem;
+      width: 4rem;
+      background-color: var(--off-black);
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Space Grotesk";
+    }
+  }
+}
+
+.include {
+  height: 4.25rem;
+  background-color: var(--include-blue);
+  display: flex;
+  align-items: center;
+  padding-left: 6.25rem;
+
+  @include mixins.phone {
+    padding-left: 1.25rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    color: var(--white);
+    font-family: "Space Grotesk";
+    font-weight: 400;
+
+    @include mixins.phone {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include mixins.phone {
+    margin-bottom: 3rem;
+  }
+  a {
+    cursor: pointer;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--off-black);
+  }
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  gap: 2.25rem;
+  @include mixins.phone {
+    display: none;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.logosMobile {
+  display: none;
+  flex-direction: row;
+  gap: 1.75rem;
+
+  a {
+    cursor: pointer;
+  }
+
+  @include mixins.phone {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+}

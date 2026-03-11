@@ -6,10 +6,19 @@
   --midnight: #000138;
   --space-blue: #172b54;
   --white: #ffffff;
+  --include-blue: #00143d;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+button {
+  all: unset;
+}
+
+a {
+  all: unset;
 }
