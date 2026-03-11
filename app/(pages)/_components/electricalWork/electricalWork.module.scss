@@ -1,0 +1,108 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.section {
+  padding: 10rem 0;
+  background-color: var(--off-white);
+  overflow: hidden;
+
+  @include mixins.phone {
+    padding: 6.5rem 0;
+  }
+}
+
+.topText {
+  margin: 0 6.25rem;
+  @include mixins.phone {
+    margin: 0 1.25rem;
+  }
+}
+
+.sectionTitle {
+  color: var(--off-black);
+  font-family: Oxanium, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  @include mixins.phone {
+    color: var(--space-blue);
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.sectionDescription {
+  color: var(--off-black);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
+
+  @include mixins.phone {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
+.carousel {
+  width: 100%;
+  overflow: visible;
+  margin-bottom: 2rem;
+}
+
+.carouselTrackWrapper {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carouselTrack {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .cardImage {
+    img {
+      display: block;
+      width: 30rem;
+      height: 21rem;
+      border-radius: 0.9375rem 0.9375rem 0 0;
+
+      @include mixins.phone {
+        width: 16.75rem;
+        height: 12.5rem;
+      }
+    }
+  }
+
+  .cardCaption {
+    background: var(
+      --Blue-Gradient,
+      linear-gradient(180deg, var(--midnight) 0%, var(--space-blue) 100%)
+    );
+    color: var(--off-white);
+    padding: 2rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+
+    @include mixins.phone {
+      padding: 1.4rem 0;
+      padding-left: 2rem;
+      font-size: 1rem;
+    }
+  }
+}

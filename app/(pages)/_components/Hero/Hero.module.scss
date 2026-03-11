@@ -1,0 +1,54 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.hero {
+  padding: 7.5rem 6.25rem;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--off-white);
+  position: relative;
+
+  @include mixins.phone {
+    flex-direction: column-reverse;
+    padding: 4rem 1.25rem;
+    height: unset;
+  }
+}
+
+.textContainer {
+  align-self: flex-start;
+  top: 50%;
+  position: relative;
+  color: var(--midnight);
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Oxanium";
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Oxanium";
+  }
+
+  @include mixins.phone {
+    position: unset;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.imageContainer {
+  height: 22.5rem;
+  flex: 1;
+  position: relative;
+
+  @include mixins.phone {
+    flex: none;
+    height: 8.75rem;
+    width: 100%;
+  }
+}

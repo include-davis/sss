@@ -1,0 +1,99 @@
+@use '@/app/(pages)/_globals/mixins.scss';
+
+.container {
+    padding: 6.25rem;
+    align-items: flex-start;
+    background: url('/public/Frame 1618873348.png') lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, #000138 0%, #172B54 100%);
+    //keep this as background
+
+    @include mixins.phone {
+        padding: 1.5rem 1.25rem;
+        background: var(--Blue-Gradient, linear-gradient(180deg, #000138 0%, #172B54 100%));    
+        margin:auto;
+    }
+
+}
+
+.textPictureContainer{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4.6875rem;
+    //flex-shrink: 0;
+    //not necessary align-self: stretch;
+
+    @include mixins.phone{
+        flex-direction: column;
+        width:100%;
+        gap:1.5rem;
+    }
+}
+
+.textContainer{
+    display: flex;
+    width: 41.5625rem;
+    height: 14.1875rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include mixins.phone{
+        gap: 1.5rem;
+    }
+}
+
+.SponsorUsTitle {
+    //align-self: stretch;
+    color: white;
+    text-align: center;
+    font-family: 'Oxanium',sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin:0 0 1rem 0;
+
+    @include mixins.phone{
+        font-size: 2rem;
+    }
+}
+
+.benefit{
+    //height: 8.0625rem;
+    flex-shrink: 0;
+    padding:0;
+    margin:0;
+    align-self: stretch;
+    padding-left: 1.25rem;
+    color: var(--Off-White, #F7F7F7);
+    font-family: "Space Grotesk";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0.75rem;
+    margin-bottom: 0;
+
+    @include mixins.phone{
+        font-size: 1.125rem;
+        padding-left: 1rem;
+    }
+}
+
+.picture{
+    width: 31rem;
+    height: 23.1875rem;
+    //padding-top: 74.8%; 
+    border-radius: 0.9375rem;
+
+    //background: url('/Mask-group_1.png');
+    @include mixins.phone {
+        width: 22rem;
+        height: 16.5rem;
+        border-radius: 0.625rem;     
+    }
+    
+
+}
+
