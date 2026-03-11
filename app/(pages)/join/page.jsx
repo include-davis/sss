@@ -3,6 +3,7 @@ import HowCanYouJoin from "../_components/HowCanYouJoin/howCanYouJoin";
 import WhyJoinSSS from "../_components/WhyJoinSSS/why-join-sss";
 import Hero from "../_components/Hero/Hero";
 import Calendar from "../_components/Calendar/calendar";
+import Alumni from "../_components/WhereAlumni/alum";
 
 export default function Join() {
   return (
@@ -19,6 +20,7 @@ export default function Join() {
       />
       <HowCanYouJoin />
       <Calendar/>
+      <Alumni/>
     </main>
   );
 }

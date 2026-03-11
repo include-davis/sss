@@ -1,7 +1,7 @@
 
 import styles from "./current.module.scss"
 
-export default function Test() {
+export default function CurrentProjects() {
   return (
     <main className={styles.main}>
       <div className={styles.main_title}>
