@@ -1,4 +1,4 @@
-import Alum from '../_components/WhereAlumni/alum';
+import Alum from "../_components/WhereAlumni/alum";
 
 export default function AlumniPage() {
   return (

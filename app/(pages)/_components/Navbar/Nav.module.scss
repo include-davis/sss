@@ -21,7 +21,10 @@
   }
 
   .mobileTop.open {
-    border-bottom: solid 1px var(--light-gray);
+    border-bottom: none;
+    @include mixins.phone {
+      border-bottom: solid 1px var(--light-gray);
+    }
   }
 
   .hamburger {

@@ -3,7 +3,7 @@ import ComeJoinUs from "../_components/ComeJoinUs/comeJoinUs";
 import WhoAreWe from "../_components/WhoAreWe/who-are-we";
 import WhatWereUpTo from "../_components/WhatWereUpTo/whatWereUpTo";
 import Hero from "../_components/Hero/Hero";
-import ThankYouSponsors from "../_components/ThankYouSponsors/Sponsors";  
+import ThankYouSponsors from "../_components/ThankYouSponsors/Sponsors";
 
 export default function Home() {
   const paragraphs = [

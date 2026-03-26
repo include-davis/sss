@@ -1,0 +1,47 @@
+@use "@/app/(pages)/_globals/mixins.scss";
+
+.main {
+  background-image: url("/bg-blue-stars.svg");
+  padding: 7rem 19rem;
+  @include mixins.phone {
+    padding: 0 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+
+  h1 {
+    color: var(--off-white);
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    @include mixins.phone {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-family: "Space Grotesk";
+    color: var(--off-white);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    @include mixins.phone {
+      font-size: 1.125rem;
+    }
+  }
+
+  a {
+    margin-top: 1.5rem;
+    display: inline-block;
+    color: var(--gray);
+    font-size: 1rem;
+    padding: 1rem 3.5rem;
+    background-color: #e0e2e6;
+    border-radius: 0.3125rem;
+    font-family: "Space Grotesk";
+    cursor: pointer;
+    @include mixins.phone {
+      font-size: 0.875rem;
+      padding: 0.75rem 2.5rem;
+    }
+  }
+}

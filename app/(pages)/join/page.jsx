@@ -19,8 +19,8 @@ export default function Join() {
         paragraph2="We make it a priority to make sure all members have the opportunity to have meaningful contributions to the project and learn industry relevant skills. We always have plenty to do!"
       />
       <HowCanYouJoin />
-      <Calendar/>
-      <Alumni/>
+      <Calendar />
+      <Alumni />
     </main>
   );
 }

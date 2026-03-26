@@ -1,65 +1,102 @@
-.sponsorContainer {
-    padding: 0 6.25rem;
-    padding-bottom: 12.5rem;
-    background: var(--off-white);
+@use "@/app/(pages)/_globals/mixins.scss";
 
-    h2 {
-        font-weight: 500;
-        font-size: 3rem;
-        margin-bottom: 2rem;
+.sponsorContainer {
+  padding: 0 6.25rem;
+  padding-bottom: 12.5rem;
+  background: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  @include mixins.phone {
+    padding: 0 1.25rem;
+    padding-bottom: 7.5rem;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+    @include mixins.phone {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
+  }
 }
 
 .sponsorCard {
-    display: flex; 
-    align-items: center;
-    gap: 4rem; 
-    background: var(--white);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    height: 12rem;
-    width: 100%;
-    font-family: "Space Grotesk";
+  display: flex;
+  align-items: stretch;
+  gap: 4rem;
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-family: "Space Grotesk";
+  min-height: 11.625rem;
+
+  @include mixins.phone {
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 0;
+  }
 }
 
 .sponsorTier {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, var(--midnight), var(--space-blue));
-    border-radius: .5rem;
-    padding: 1rem;
-    width: 11rem;
-    height: 9rem;
-    gap:.5rem;
-    
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, var(--midnight), var(--space-blue));
+  border-radius: 0.5rem;
+  min-width: 11rem;
+  gap: 0.5rem;
+  @include mixins.phone {
+    width: 100%;
+    min-height: 4rem;
+  }
 
-.tierName {
+  .tierName {
     color: var(--white);
-    font-weight: normal;
     font-size: 1.5rem;
-}
 
-.tierAmount {
+    @include mixins.phone {
+      font-size: 1.125rem;
+    }
+  }
+
+  .tierAmount {
     color: var(--white);
     font-size: 1rem;
+
+    @include mixins.phone {
+      font-size: 0.875rem;
+    }
+  }
 }
 
 .sponsorList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6.25rem;
+  row-gap: 2rem;
+  align-items: center;
+  @include mixins.phone {
+    flex-direction: column;
     align-items: center;
-    max-width: 40rem;
+    row-gap: 1.5rem;
+  }
 
-    p {
-        width: 10rem;
+  p {
+    font-size: 1.5rem;
+    font-family: "Space Grotesk";
+    @include mixins.phone {
+      font-size: 0.875rem;
     }
+  }
 }
 
 .landingSoon {
-    color: var(--light-gray);
+  color: var(--light-gray);
 }

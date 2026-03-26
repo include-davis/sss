@@ -1,67 +1,65 @@
 @use "@/app/(pages)/_globals/mixins.scss";
 
-.card{
-    width: 15.625rem;
-    @include mixins.phone {
-        width: 18.75rem;
-    }
+.card {
+  width: 15.625rem;
+  @include mixins.phone {
+    width: 18.75rem;
+  }
 }
-.image{
-    width: 15.625rem;
-    height: 15.7rem;
-    margin-top: .2rem;
+.image {
+  width: 15.625rem;
+  height: 15.7rem;
+  margin-top: 0.2rem;
 
-
-    @include mixins.phone {
-        width: 18.75rem;
-        height: 18.75rem;
-    }
+  @include mixins.phone {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
 }
 
 .placeholder {
-    width: 15.625rem;
-    height: 16rem;
+  width: 15.625rem;
+  height: 16rem;
 
-    @include mixins.phone {
-        width: 18.75rem;
-        height: 18.75rem;
-    }
+  @include mixins.phone {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
 }
-.info{
-    margin-top: 0.5rem;
+.info {
+  margin-top: 0.5rem;
 }
-.topRow{
-    display: flex; 
-    align-items: flex-start;
-    gap: 0.25rem;
+.topRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
 }
-.name{
-    font-family:"Space Grotesk";
-    font-size: 1.5rem;
-    color: var(--off-black);
-    font-weight: 400;
-    flex: 1;
-    overflow-wrap: break-word;
+.name {
+  font-family: "Space Grotesk";
+  font-size: 1.5rem;
+  color: var(--off-black);
+  font-weight: 400;
+  flex: 1;
+  overflow-wrap: break-word;
 }
-.email{
-    
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light-gray);
-    align-self:flex-start;
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-gray);
+  align-self: flex-start;
 }
-.title{
-    margin-top: 0.5rem;
-    color: var(--space-blue);
-    font-family:"Space Grotesk";
-    font-size: 1rem;
-    font-weight: 400;
+.title {
+  margin-top: 0.5rem;
+  color: var(--space-blue);
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  font-weight: 400;
 }
-.department{
-    margin-top: 0.5rem;
-    color:var(--gray);
-    font-family:"Space Grotesk";
-    font-size: 1rem;
-    font-weight:400;
+.department {
+  margin-top: 0.5rem;
+  color: var(--gray);
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  font-weight: 400;
 }

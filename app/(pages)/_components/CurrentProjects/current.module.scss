@@ -8,15 +8,14 @@
   border-radius: 0.9375rem;
   border: 1.5px solid var(--Blue-Gradient, #000138);
   /* Drop Shadow */
-  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
-  @include mixins.phone{
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+  @include mixins.phone {
     grid-template-columns: 1fr;
     margin-bottom: 2.5rem;
     padding: 1rem;
     border-radius: 0.625rem;
     border: 0.5px solid var(--Blue-Gradient, #000138);
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.04);
-    
   }
 }
 
@@ -30,20 +29,20 @@
   padding-top: 1.68rem;
   padding-bottom: 1.68rem;
   border-radius: 8px;
-  @include mixins.phone{
+  @include mixins.phone {
     gap: 0.5rem;
     padding: 0rem;
     justify-content: center;
-    align-items:center;
+    align-items: center;
   }
 }
 
 .imageColumn {
   order: 1; /* Image comes first in grid order */
   display: flex;
-  @include mixins.phone{
+  @include mixins.phone {
     justify-content: normal;
-    align-items:normal;
+    align-items: normal;
     padding-bottom: 1rem;
   }
 }
@@ -54,13 +53,12 @@
   border-radius: 0.5rem;
 }
 
-
 .imageColumn2 {
   order: 1; /* Image comes first in grid order */
   display: flex;
-  @include mixins.phone{
+  @include mixins.phone {
     justify-content: normal;
-    align-items:normal;
+    align-items: normal;
     padding-bottom: 1rem;
   }
 }
@@ -75,9 +73,9 @@
   order: 1; /* Image comes first in grid order */
   display: flex;
 
-  @include mixins.phone{
+  @include mixins.phone {
     justify-content: normal;
-    align-items:normal;
+    align-items: normal;
     padding-bottom: 1rem;
   }
 }
@@ -87,12 +85,11 @@
   border-radius: 0.5rem;
 }
 
-
-.a{
+.a {
   text-decoration: none;
 }
 
-.button{
+.button {
   margin-top: 1.5rem;
   display: flex;
   width: 14.0625rem;
@@ -102,45 +99,43 @@
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.3125rem;
-  border: 0.5px solid var(--light-gray, #B6B6B6);
-  background: rgba(87, 87, 87, 0.80);
+  border: 0.5px solid var(--light-gray, #b6b6b6);
+  background: rgba(87, 87, 87, 0.8);
   /* Drop Shadow */
-  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.10);
-  color: var(--Off-White, #F7F7F7);
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+  color: var(--Off-White, #f7f7f7);
   font-family: "Space Grotesk";
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: color 0.4s linear;
-  @include mixins.phone{
+  @include mixins.phone {
     margin-top: 0.75rem;
     width: 11.25rem;
     height: 2.625rem;
     padding: 0.5rem;
     font-size: 0.875rem;
-    
   }
 }
-.button:hover{
-  background-color:#172B54;
+.button:hover {
+  background-color: #172b54;
 }
 
-.norm_text{
-  color: var(--Off-Black, #2B2B2B);
+.norm_text {
+  color: var(--Off-Black, #2b2b2b);
   /* Body */
   font-family: "Space Grotesk";
   font-size: 1.25rem;
   margin-top: 1rem;
-  @include mixins.phone{
+  @include mixins.phone {
     padding-bottom: 0.5rem;
   }
 }
-.main_title{
-
+.main_title {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  @include mixins.phone{
+  @include mixins.phone {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     //color: #000;
@@ -148,37 +143,34 @@
     /* Header 1 (Mobile) */
     font-family: Oxanium;
     font-size: 2rem;
-    
   }
 }
-.main{
+.main {
   background-color: var(--off-white);
   padding: 9.25rem 6.25rem;
-  @include mixins.phone{
+  @include mixins.phone {
     padding: 1.25rem;
   }
 }
 
-.second_title{
-  color: var(--Space-Blue, #172B54);
+.second_title {
+  color: var(--Space-Blue, #172b54);
   /* Header 3 */
   font-size: 2rem;
   font-weight: 500;
-  @include mixins.phone{
+  @include mixins.phone {
     font-size: 1.5rem;
     justify-content: center;
-    align-items:center;
+    align-items: center;
   }
 }
 
-.small_text{
+.small_text {
   color: var(--Grey, #575757);
-  
 }
-.block{
+.block {
   display: block;
   margin-top: 1rem;
-  
 }
 
 .p {

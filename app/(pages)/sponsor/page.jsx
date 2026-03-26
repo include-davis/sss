@@ -13,8 +13,8 @@ export default function Sponsor() {
         imageSrc="/hero/sponsorus-graphic.svg"
         imageAlt="Hero graphic"
       />
-      <WhySponsorUs/>
-      <SponsorTiers/>
+      <WhySponsorUs />
+      <SponsorTiers />
       <ContactForm />
     </main>
   );

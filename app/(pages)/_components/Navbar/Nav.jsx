@@ -37,11 +37,21 @@ export default function Navbar() {
         </button>
       </div>
       <div className={`${styles.pages} ${linkMenuOpen ? styles.open : ""}`}>
-        <Link href="/">Home</Link>
-        <Link href="/missions">Missions</Link>
-        <Link href="/teams">Teams</Link>
-        <Link href="/sponsor">Sponsor Us</Link>
-        <Link href="/join">Join Us</Link>
+        <Link href="/" onClick={() => toggleLinkMenu(false)}>
+          Home
+        </Link>
+        <Link href="/missions" onClick={() => toggleLinkMenu(false)}>
+          Missions
+        </Link>
+        <Link href="/teams" onClick={() => toggleLinkMenu(false)}>
+          Teams
+        </Link>
+        <Link href="/sponsor" onClick={() => toggleLinkMenu(false)}>
+          Sponsor Us
+        </Link>
+        <Link href="/join" onClick={() => toggleLinkMenu(false)}>
+          Join Us
+        </Link>
       </div>
     </nav>
   );
