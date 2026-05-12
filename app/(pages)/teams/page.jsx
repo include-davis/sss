@@ -7,7 +7,7 @@ async function getAdvisors() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/advisors?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -36,7 +36,7 @@ async function getAdmins() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/admin?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -65,7 +65,7 @@ async function getEletrical() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/electrical?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -94,7 +94,7 @@ async function getLeadership() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/leadership?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -123,7 +123,7 @@ async function getSoftware() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/software?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -152,7 +152,7 @@ async function getStructures() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/structures?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {

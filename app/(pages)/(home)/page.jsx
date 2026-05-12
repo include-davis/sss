@@ -9,7 +9,7 @@ async function getVoyager() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/voyager?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -36,7 +36,7 @@ async function getJuno() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/juno?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -63,7 +63,7 @@ async function getOpportunity() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/opportunity?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -89,7 +89,7 @@ async function getApollo() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/apollo?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
@@ -115,7 +115,7 @@ async function getSputnik() {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/sputnik?_published=true`,
-      { next: { tags: ["cms"] } },
+      { next: { revalidate: 60 } },
     );
     const data = await res.json();
     if (!data.ok || !data.body) {
