@@ -7,7 +7,7 @@ import Alumni from "../_components/WhereAlumni/alum";
 
 export default function Join() {
   return (
-    <main>
+    <main className={styles.main}>
       <Hero
         textContent={<h1>Join Us</h1>}
         imageSrc="/hero/joinus-graphic.svg"
