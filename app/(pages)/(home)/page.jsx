@@ -21,7 +21,7 @@ async function getVoyager() {
     const parsedData = data.body.map((sponsor) => {
       console.log(sponsor.logo);
       return {
-        imgURL: sponsor.logo[0].src,
+        imgURL: sponsor.logo?.[0]?.src ?? null,
         name: sponsor.name,
       };
     });
@@ -48,7 +48,7 @@ async function getJuno() {
     const parsedData = data.body.map((sponsor) => {
       console.log(sponsor.logo);
       return {
-        imgURL: sponsor.logo[0].src,
+        imgURL: sponsor.logo?.[0]?.src ?? null,
         name: sponsor.name,
       };
     });
@@ -75,6 +75,7 @@ async function getOpportunity() {
     const parsedData = data.body.map((sponsor) => {
       console.log(sponsor.logo);
       return {
+        imgURL: sponsor.logo?.[0]?.src ?? null,
         name: sponsor.name,
       };
     });
@@ -101,6 +102,7 @@ async function getApollo() {
     const parsedData = data.body.map((sponsor) => {
       console.log(sponsor.logo);
       return {
+        imgURL: sponsor.logo?.[0]?.src ?? null,
         name: sponsor.name,
       };
     });
@@ -127,6 +129,7 @@ async function getSputnik() {
     const parsedData = data.body.map((sponsor) => {
       console.log(sponsor.logo);
       return {
+        imgURL: sponsor.logo?.[0]?.src ?? null,
         name: sponsor.name,
       };
     });

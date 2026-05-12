@@ -13,7 +13,7 @@ function SponsorTier({ tierName, tierAmount, sponsorList }) {
         ) : (
           sponsorList.map((sponsor, j) => (
             <div key={j}>
-              {sponsor.imgURL ? ( // if sponsor has logo/img, show it, else, show name
+              {sponsor.imgURL?.trim() ? ( // if sponsor has logo/img, show it, else, show name
                 <img
                   src={sponsor.imgURL}
                   alt={sponsor.name}
