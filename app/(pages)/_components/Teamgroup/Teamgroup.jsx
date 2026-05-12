@@ -12,9 +12,9 @@ export default function TeamGroup({ title, members }) {
             key={index}
             name={member.name}
             title={member.title}
-            department={member.department}
-            image={member.image}
-            emailLink={member.emailLink}
+            study={member.study}
+            photo={member.photo}
+            email={member.email}
           />
         ))}
       </div>

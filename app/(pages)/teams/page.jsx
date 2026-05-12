@@ -3,31 +3,188 @@ import Hero from "../_components/Hero/Hero";
 import styles from "./page.module.scss";
 import TeamGroup from "../_components/TeamGroup/Teamgroup";
 
-const Advisors = [
-  {
-    name: "Rich Whittle",
-    title: "Assistant Professor",
-    department: "Mechanical and Aerospace Engineering",
-    image: "",
-    emailLink: "rswhittle@ucdavis.edu",
-  },
-  {
-    name: "Alan Dugger",
-    title: "Assistant Professor",
-    department: "Military Science",
-    image: "/headshots/alandugger.png",
-    emailLink: "adugger@ucdavis.edu",
-  },
-  {
-    name: "Adam Zufall",
-    title: "PhD-Student Advisor",
-    department: "Inspection Satellite Technologies",
-    image: "",
-    emailLink: "admzufall@ucdavis.edu",
-  },
-];
+async function getAdvisors() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/advisors?_published=true`,
+      { next: { tag: "cms" } },
+    );
+    const data = await res.json();
+    if (!data.ok || !data.body) {
+      throw new Error(data.error);
+    }
+    if (data.body.length === 0) {
+      return [];
+    }
+    const parsedData = data.body.map((member) => {
+      return {
+        photo: member.photo[0],
+        name: member.name,
+        title: member.title,
+        study: member.study,
+        email: member.email,
+      };
+    });
+    return parsedData;
+  } catch (e) {
+    console.error(`Failed to fetch advisors: ${e.message}`);
+    return [];
+  }
+}
 
-export default function Teams() {
+async function getAdmins() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/admin?_published=true`,
+      { next: { tag: "cms" } },
+    );
+    const data = await res.json();
+    if (!data.ok || !data.body) {
+      throw new Error(data.error);
+    }
+    if (data.body.length === 0) {
+      return [];
+    }
+    const parsedData = data.body.map((member) => {
+      return {
+        photo: member.photo[0],
+        name: member.name,
+        title: member.title,
+        study: member.study,
+        email: member.email,
+      };
+    });
+    return parsedData;
+  } catch (e) {
+    console.error(`Failed to fetch admins: ${e.message}`);
+    return [];
+  }
+}
+
+async function getEletrical() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/electrical?_published=true`,
+      { next: { tag: "cms" } },
+    );
+    const data = await res.json();
+    if (!data.ok || !data.body) {
+      throw new Error(data.error);
+    }
+    if (data.body.length === 0) {
+      return [];
+    }
+    const parsedData = data.body.map((member) => {
+      return {
+        photo: member.photo[0],
+        name: member.name,
+        title: member.title,
+        study: member.study,
+        email: member.email,
+      };
+    });
+    return parsedData;
+  } catch (e) {
+    console.error(`Failed to fetch electrical members: ${e.message}`);
+    return [];
+  }
+}
+
+async function getLeadership() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/leadership?_published=true`,
+      { next: { tag: "cms" } },
+    );
+    const data = await res.json();
+    if (!data.ok || !data.body) {
+      throw new Error(data.error);
+    }
+    if (data.body.length === 0) {
+      return [];
+    }
+    const parsedData = data.body.map((member) => {
+      return {
+        photo: member.photo[0],
+        name: member.name,
+        title: member.title,
+        study: member.study,
+        email: member.email,
+      };
+    });
+    return parsedData;
+  } catch (e) {
+    console.error(`Failed to fetch executive leadership: ${e.message}`);
+    return [];
+  }
+}
+
+async function getSoftware() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/software?_published=true`,
+      { next: { tag: "cms" } },
+    );
+    const data = await res.json();
+    if (!data.ok || !data.body) {
+      throw new Error(data.error);
+    }
+    if (data.body.length === 0) {
+      return [];
+    }
+    const parsedData = data.body.map((member) => {
+      return {
+        photo: member.photo[0],
+        name: member.name,
+        title: member.title,
+        study: member.study,
+        email: member.email,
+      };
+    });
+    return parsedData;
+  } catch (e) {
+    console.error(`Failed to fetch software members: ${e.message}`);
+    return [];
+  }
+}
+
+async function getStructures() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/api/content/structures?_published=true`,
+      { next: { tag: "cms" } },
+    );
+    const data = await res.json();
+    if (!data.ok || !data.body) {
+      throw new Error(data.error);
+    }
+    if (data.body.length === 0) {
+      return [];
+    }
+    const parsedData = data.body.map((member) => {
+      return {
+        photo: member.photo[0],
+        name: member.name,
+        title: member.title,
+        study: member.study,
+        email: member.email,
+      };
+    });
+    return parsedData;
+  } catch (e) {
+    console.error(`Failed to fetch structures members: ${e.message}`);
+    return [];
+  }
+}
+
+export default async function Teams() {
+  const advisors = await getAdvisors();
+  const leadership = await getLeadership();
+  const electrical = await getEletrical();
+  const structures = await getStructures();
+  const software = await getSoftware();
+  const admins = await getAdmins();
+
   return (
     <main>
       <div className={styles.heroContent}>
@@ -54,12 +211,12 @@ export default function Teams() {
           alt="star"
         />
       </div>
-      <TeamGroup title="Advisors" members={Advisors} />
-      <TeamGroup title="Executive Leadership" members={Advisors} />
-      <TeamGroup title="Electrical Team" members={Advisors} />
-      <TeamGroup title="Structures Team" members={Advisors} />
-      <TeamGroup title="Software Team" members={Advisors} />
-      <TeamGroup title="Administrative and Finance Team" members={Advisors} />
+      <TeamGroup title="Advisors" members={advisors} />
+      <TeamGroup title="Executive Leadership" members={leadership} />
+      <TeamGroup title="Electrical Team" members={electrical} />
+      <TeamGroup title="Structures Team" members={structures} />
+      <TeamGroup title="Software Team" members={software} />
+      <TeamGroup title="Administrative and Finance Team" members={admins} />
     </main>
   );
 }

@@ -8,8 +8,10 @@
 }
 .image {
   width: 15.625rem;
-  height: 15.7rem;
+  height: 15.625rem;
   margin-top: 0.2rem;
+  border-radius: 0.3125rem;
+  border: 1.5px solid var(--space-blue);
 
   @include mixins.phone {
     width: 18.75rem;
@@ -56,7 +58,7 @@
   font-size: 1rem;
   font-weight: 400;
 }
-.department {
+.study {
   margin-top: 0.5rem;
   color: var(--gray);
   font-family: "Space Grotesk";

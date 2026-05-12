@@ -1,4 +1,5 @@
 import styles from "./current.module.scss";
+import Link from "next/link";
 
 export default function CurrentProjects() {
   return (
@@ -40,9 +41,9 @@ export default function CurrentProjects() {
               low Earth orbit.
             </p>
           </div>
-          <a className={styles.a} href="/Realop I">
+          <Link className={styles.a} href="/realop">
             <button className={styles.button}>Learn More</button>
-          </a>
+          </Link>
         </div>
       </div>
 

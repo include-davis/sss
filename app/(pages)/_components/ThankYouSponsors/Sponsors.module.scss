@@ -100,3 +100,11 @@
 .landingSoon {
   color: var(--light-gray);
 }
+
+.sponsorImage {
+  max-height: 9.125rem;
+  @include mixins.phone {
+    max-height: none;
+    max-width: 20.625rem;
+  }
+}
